@@ -1,0 +1,761 @@
+[
+  {
+    "purpose": "material_focus",
+    "camera_behavior": [
+      "macro close-up",
+      "slow pan"
+    ],
+    "subject_rules": [
+      "material fills most of frame"
+    ],
+    "motion_rules": [
+      "camera-driven motion only"
+    ],
+    "sensory_focus": [
+      "texture",
+      "surface quality"
+    ],
+    "emotional_intent": "Trust"
+  },
+  {
+    "purpose": "color_variation",
+    "camera_behavior": [
+      "static framing"
+    ],
+    "subject_rules": [
+      "one color per shot"
+    ],
+    "motion_rules": [
+      "cut-based transitions"
+    ],
+    "sensory_focus": [
+      "color contrast"
+    ],
+    "emotional_intent": "Choice confidence"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "slow dolly"
+    ],
+    "subject_rules": [
+      "environment leads composition"
+    ],
+    "motion_rules": [
+      "minimal motion"
+    ],
+    "sensory_focus": [
+      "light",
+      "space"
+    ],
+    "emotional_intent": "Calm"
+  },
+  {
+    "purpose": "lifestyle_emotion",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "furniture supports activity"
+    ],
+    "motion_rules": [
+      "natural human movement"
+    ],
+    "sensory_focus": [
+      "comfort"
+    ],
+    "emotional_intent": "Warmth"
+  },
+  {
+    "purpose": "form_reveal",
+    "camera_behavior": [
+      "orbit shot"
+    ],
+    "subject_rules": [
+      "single object focus"
+    ],
+    "motion_rules": [
+      "continuous camera motion"
+    ],
+    "sensory_focus": [
+      "shape"
+    ],
+    "emotional_intent": "Clarity"
+  },
+  {
+    "purpose": "authority_message",
+    "camera_behavior": [
+      "locked-off shot"
+    ],
+    "subject_rules": [
+      "uncluttered background"
+    ],
+    "motion_rules": [
+      "no motion"
+    ],
+    "sensory_focus": [
+      "stability"
+    ],
+    "emotional_intent": "Assurance"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "single focal object"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "visual balance"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "storytelling_mood_establish",
+    "camera_behavior": [
+      "wide static shot"
+    ],
+    "subject_rules": [
+      "environment precedes product"
+    ],
+    "motion_rules": [
+      "casual human motion"
+    ],
+    "sensory_focus": [
+      "everyday realism"
+    ],
+    "emotional_intent": "Familiarity"
+  },
+  {
+    "purpose": "storytelling_conflict_setup",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "furniture central to interaction"
+    ],
+    "motion_rules": [
+      "natural blocking"
+    ],
+    "sensory_focus": [
+      "use context"
+    ],
+    "emotional_intent": "Engagement"
+  },
+  {
+    "purpose": "storytelling_resolution",
+    "camera_behavior": [
+      "static framing"
+    ],
+    "subject_rules": [
+      "problem visually resolved"
+    ],
+    "motion_rules": [
+      "movement settles"
+    ],
+    "sensory_focus": [
+      "function"
+    ],
+    "emotional_intent": "Relief"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "locked-off"
+    ],
+    "subject_rules": [
+      "visual simplicity"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "clarity"
+    ],
+    "emotional_intent": "Confidence"
+  },
+  {
+    "purpose": "sale_mood_establish",
+    "camera_behavior": [
+      "quick cut"
+    ],
+    "subject_rules": [
+      "no buildup"
+    ],
+    "motion_rules": [
+      "fast pacing"
+    ],
+    "sensory_focus": [
+      "brightness"
+    ],
+    "emotional_intent": "Urgency"
+  },
+  {
+    "purpose": "sale_variety_display",
+    "camera_behavior": [
+      "static shots"
+    ],
+    "subject_rules": [
+      "one setup per shot"
+    ],
+    "motion_rules": [
+      "cut-based"
+    ],
+    "sensory_focus": [
+      "variety"
+    ],
+    "emotional_intent": "Abundance"
+  },
+  {
+    "purpose": "sale_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "clear focal object"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "visual certainty"
+    ],
+    "emotional_intent": "Decision confidence"
+  },
+  {
+    "purpose": "sale_mood_establish",
+    "camera_behavior": [
+      "slow pan"
+    ],
+    "subject_rules": [
+      "environment leads"
+    ],
+    "motion_rules": [
+      "ambient motion"
+    ],
+    "sensory_focus": [
+      "light"
+    ],
+    "emotional_intent": "Freshness"
+  },
+  {
+    "purpose": "sale_product_focus",
+    "camera_behavior": [
+      "static medium-wide"
+    ],
+    "subject_rules": [
+      "no human presence"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "form"
+    ],
+    "emotional_intent": "Clarity"
+  },
+  {
+    "purpose": "sale_close",
+    "camera_behavior": [
+      "locked-off"
+    ],
+    "subject_rules": [
+      "visual symmetry"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "harmony"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "display_mood_establish",
+    "camera_behavior": [
+      "slow push-in"
+    ],
+    "subject_rules": [
+      "minimal environment"
+    ],
+    "motion_rules": [
+      "camera-only"
+    ],
+    "sensory_focus": [
+      "contrast"
+    ],
+    "emotional_intent": "Sophistication"
+  },
+  {
+    "purpose": "display_form_focus",
+    "camera_behavior": [
+      "tracking shot"
+    ],
+    "subject_rules": [
+      "single object"
+    ],
+    "motion_rules": [
+      "steady motion"
+    ],
+    "sensory_focus": [
+      "geometry"
+    ],
+    "emotional_intent": "Admiration"
+  },
+  {
+    "purpose": "display_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "uncluttered frame"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "visual balance"
+    ],
+    "emotional_intent": "Finality"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "slow dolly",
+      "wide framing"
+    ],
+    "subject_rules": [
+      "environment leads composition"
+    ],
+    "motion_rules": [
+      "minimal ambient motion"
+    ],
+    "sensory_focus": [
+      "light",
+      "space"
+    ],
+    "emotional_intent": "Calm"
+  },
+  {
+    "purpose": "authority_message",
+    "camera_behavior": [
+      "locked-off shot"
+    ],
+    "subject_rules": [
+      "single hero object"
+    ],
+    "motion_rules": [
+      "no motion"
+    ],
+    "sensory_focus": [
+      "stability"
+    ],
+    "emotional_intent": "Assurance"
+  },
+  {
+    "purpose": "lifestyle_emotion",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "furniture supports activity"
+    ],
+    "motion_rules": [
+      "natural human movement"
+    ],
+    "sensory_focus": [
+      "comfort"
+    ],
+    "emotional_intent": "Warmth"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "uncluttered background"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "visual balance"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "wide static shot"
+    ],
+    "subject_rules": [
+      "environment precedes detail"
+    ],
+    "motion_rules": [
+      "ambient background motion"
+    ],
+    "sensory_focus": [
+      "scale",
+      "activity"
+    ],
+    "emotional_intent": "Credibility"
+  },
+  {
+    "purpose": "color_variation",
+    "camera_behavior": [
+      "static close framing"
+    ],
+    "subject_rules": [
+      "one color per shot"
+    ],
+    "motion_rules": [
+      "cut-based transitions"
+    ],
+    "sensory_focus": [
+      "color contrast"
+    ],
+    "emotional_intent": "Choice confidence"
+  },
+  {
+    "purpose": "material_focus",
+    "camera_behavior": [
+      "macro close-up",
+      "slow pan"
+    ],
+    "subject_rules": [
+      "material fills frame"
+    ],
+    "motion_rules": [
+      "camera-driven motion"
+    ],
+    "sensory_focus": [
+      "texture"
+    ],
+    "emotional_intent": "Trust"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "static framing"
+    ],
+    "subject_rules": [
+      "visual simplicity"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "clarity"
+    ],
+    "emotional_intent": "Reliability"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "slow push-in"
+    ],
+    "subject_rules": [
+      "single focal object"
+    ],
+    "motion_rules": [
+      "camera-only motion"
+    ],
+    "sensory_focus": [
+      "contrast"
+    ],
+    "emotional_intent": "Recognition"
+  },
+  {
+    "purpose": "form_reveal",
+    "camera_behavior": [
+      "tracking shot"
+    ],
+    "subject_rules": [
+      "object remains centered"
+    ],
+    "motion_rules": [
+      "continuous camera motion"
+    ],
+    "sensory_focus": [
+      "shape"
+    ],
+    "emotional_intent": "Admiration"
+  },
+  {
+    "purpose": "lifestyle_emotion",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "human secondary to object"
+    ],
+    "motion_rules": [
+      "natural movement"
+    ],
+    "sensory_focus": [
+      "comfort"
+    ],
+    "emotional_intent": "Connection"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "locked-off"
+    ],
+    "subject_rules": [
+      "symmetrical framing"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "visual harmony"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "wide shot"
+    ],
+    "subject_rules": [
+      "environment first"
+    ],
+    "motion_rules": [
+      "gentle ambient motion"
+    ],
+    "sensory_focus": [
+      "light"
+    ],
+    "emotional_intent": "Optimism"
+  },
+  {
+    "purpose": "form_reveal",
+    "camera_behavior": [
+      "medium-wide static shot"
+    ],
+    "subject_rules": [
+      "single hero object"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "proportion"
+    ],
+    "emotional_intent": "Clarity"
+  },
+  {
+    "purpose": "lifestyle_emotion",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "furniture supports daily life"
+    ],
+    "motion_rules": [
+      "natural human movement"
+    ],
+    "sensory_focus": [
+      "comfort"
+    ],
+    "emotional_intent": "Warmth"
+  },
+  {
+    "purpose": "authority_message",
+    "camera_behavior": [
+      "locked-off shot"
+    ],
+    "subject_rules": [
+      "uncluttered background"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "stability"
+    ],
+    "emotional_intent": "Confidence"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "visual balance"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "harmony"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "wide static shot"
+    ],
+    "subject_rules": [
+      "fast visual clarity"
+    ],
+    "motion_rules": [
+      "minimal motion"
+    ],
+    "sensory_focus": [
+      "brightness"
+    ],
+    "emotional_intent": "Approachability"
+  },
+  {
+    "purpose": "material_focus",
+    "camera_behavior": [
+      "macro close-up"
+    ],
+    "subject_rules": [
+      "material isolated"
+    ],
+    "motion_rules": [
+      "camera-driven"
+    ],
+    "sensory_focus": [
+      "texture"
+    ],
+    "emotional_intent": "Trust"
+  },
+  {
+    "purpose": "lifestyle_emotion",
+    "camera_behavior": [
+      "medium shot"
+    ],
+    "subject_rules": [
+      "interaction unobstructed"
+    ],
+    "motion_rules": [
+      "single continuous action"
+    ],
+    "sensory_focus": [
+      "comfort"
+    ],
+    "emotional_intent": "Relatability"
+  },
+  {
+    "purpose": "color_variation",
+    "camera_behavior": [
+      "static framing"
+    ],
+    "subject_rules": [
+      "one color per shot"
+    ],
+    "motion_rules": [
+      "cut-based"
+    ],
+    "sensory_focus": [
+      "color"
+    ],
+    "emotional_intent": "Choice ease"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "locked-off"
+    ],
+    "subject_rules": [
+      "clean composition"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "clarity"
+    ],
+    "emotional_intent": "Completion"
+  },
+  {
+    "purpose": "mood_establish",
+    "camera_behavior": [
+      "wide shot"
+    ],
+    "subject_rules": [
+      "environment first"
+    ],
+    "motion_rules": [
+      "gentle motion"
+    ],
+    "sensory_focus": [
+      "space"
+    ],
+    "emotional_intent": "Openness"
+  },
+  {
+    "purpose": "material_focus",
+    "camera_behavior": [
+      "macro close-up"
+    ],
+    "subject_rules": [
+      "material fills frame"
+    ],
+    "motion_rules": [
+      "camera-driven"
+    ],
+    "sensory_focus": [
+      "texture"
+    ],
+    "emotional_intent": "Confidence"
+  },
+  {
+    "purpose": "color_variation",
+    "camera_behavior": [
+      "static shots"
+    ],
+    "subject_rules": [
+      "one option per shot"
+    ],
+    "motion_rules": [
+      "cut-based"
+    ],
+    "sensory_focus": [
+      "color"
+    ],
+    "emotional_intent": "Personalization"
+  },
+  {
+    "purpose": "authority_message",
+    "camera_behavior": [
+      "locked-off"
+    ],
+    "subject_rules": [
+      "no human presence"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "structure"
+    ],
+    "emotional_intent": "Assurance"
+  },
+  {
+    "purpose": "brand_close",
+    "camera_behavior": [
+      "static hold"
+    ],
+    "subject_rules": [
+      "visual balance"
+    ],
+    "motion_rules": [
+      "none"
+    ],
+    "sensory_focus": [
+      "harmony"
+    ],
+    "emotional_intent": "Completion"
+  }
+]

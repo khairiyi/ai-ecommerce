@@ -1,0 +1,165 @@
+[
+  {
+    "pattern_id": "material-to-lifestyle-30s",
+    "duration": 30,
+    "acts": [
+      {"purpose": "material_focus", "duration": 3},
+      {"purpose": "color_variation", "duration": 3},
+      {"purpose": "brand_close", "duration": 4},
+      {"purpose": "mood_establish", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 4},
+      {"purpose": "form_reveal", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "authority_message", "duration": 3},
+      {"purpose": "cta", "duration": 4}
+    ]
+  },
+  {
+    "pattern_id": "narrative-tension-to-solution-30s",
+    "duration": 30,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 11},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "form_reveal", "duration": 1},
+      {"purpose": "material_focus", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 8},
+      {"purpose": "authority_message", "duration": 2},
+      {"purpose": "brand_close", "duration": 2}
+    ]
+  },
+  {
+    "pattern_id": "retail-quest-customization-15s",
+    "duration": 15,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 1},
+      {"purpose": "lifestyle_emotion", "duration": 1},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "material_focus", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 4},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "brand_close", "duration": 3}
+    ]
+  },
+  {
+    "pattern_id": "rhythmic-lifestyle-montage-20s",
+    "duration": 20,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 1},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "color_variation", "duration": 2},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 1},
+      {"purpose": "material_focus", "duration": 1},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "lifestyle_emotion", "duration": 1},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "form_reveal", "duration": 1},
+      {"purpose": "brand_close", "duration": 3}
+    ]
+  },
+  {
+    "pattern_id": "conceptual-serialism-30s",
+    "duration": 30,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 4},
+      {"purpose": "brand_close", "duration": 1},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "form_reveal", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 5},
+      {"purpose": "authority_message", "duration": 5}
+    ]
+  },
+  {
+    "pattern_id": "trust-architect-45s",
+    "duration": 45,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 3},
+      {"purpose": "form_reveal", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 9},
+      {"purpose": "material_focus", "duration": 5},
+      {"purpose": "material_focus", "duration": 6},
+      {"purpose": "authority_message", "duration": 4},
+      {"purpose": "authority_message", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 5},
+      {"purpose": "brand_close", "duration": 7}
+    ]
+  },
+  {
+    "pattern_id": "craftsmanship-process-45s",
+    "duration": 45,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 2},
+      {"purpose": "form_reveal", "duration": 6},
+      {"purpose": "authority_message", "duration": 2},
+      {"purpose": "mood_establish", "duration": 6},
+      {"purpose": "authority_message", "duration": 4},
+      {"purpose": "color_variation", "duration": 7},
+      {"purpose": "material_focus", "duration": 3},
+      {"purpose": "material_focus", "duration": 8},
+      {"purpose": "brand_close", "duration": 7}
+    ]
+  },
+  {
+    "pattern_id": "authentic-maker-37s",
+    "duration": 37,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 3},
+      {"purpose": "material_focus", "duration": 4},
+      {"purpose": "form_reveal", "duration": 3},
+      {"purpose": "authority_message", "duration": 3},
+      {"purpose": "material_focus", "duration": 5},
+      {"purpose": "authority_message", "duration": 5},
+      {"purpose": "brand_close", "duration": 2},
+      {"purpose": "form_reveal", "duration": 4},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "brand_close", "duration": 6}
+    ]
+  },
+  {
+    "pattern_id": "studio-sensory-contrast-30s",
+    "duration": 29,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 1},
+      {"purpose": "form_reveal", "duration": 5},
+      {"purpose": "material_focus", "duration": 5},
+      {"purpose": "color_variation", "duration": 4},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "authority_message", "duration": 3},
+      {"purpose": "brand_close", "duration": 8}
+    ]
+  },
+  {
+    "pattern_id": "high-velocity-variety-15s",
+    "duration": 15,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 1},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "material_focus", "duration": 3},
+      {"purpose": "lifestyle_emotion", "duration": 3},
+      {"purpose": "color_variation", "duration": 4},
+      {"purpose": "brand_close", "duration": 2}
+    ]
+  },
+  {
+    "pattern_id": "choice-accelerant-15s",
+    "duration": 15,
+    "acts": [
+      {"purpose": "mood_establish", "duration": 2},
+      {"purpose": "color_variation", "duration": 1},
+      {"purpose": "lifestyle_emotion", "duration": 2},
+      {"purpose": "form_reveal", "duration": 2},
+      {"purpose": "material_focus", "duration": 1},
+      {"purpose": "color_variation", "duration": 2},
+      {"purpose": "authority_message", "duration": 2},
+      {"purpose": "brand_close", "duration": 3}
+    ]
+  }
+]

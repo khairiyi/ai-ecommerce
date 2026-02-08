@@ -1,0 +1,1510 @@
+url,video_script,macro_structures,macro_pattern,micro_extracted
+https://www.youtube.com/watch?v=UELVSZC06BE,"Global Settings: 30s total duration, 4K resolution, 24fps, cinematic commercial aesthetic, upbeat modern percussion with luxury ambient tones, high-end studio lighting with soft shadows. Neutral studio backdrops mixed with modern interior design. Vibrant color transitions with rich bouclé textures preserved. { ""video_id"": ""professional_sofa1"", ""duration"": 30, ""shots"": [ { ""start"": 0, ""end"": 3, ""visual"": ""Extreme close-ups of grey, chartreuse, and brown bouclé fabric textures"", ""camera"": ""slow sliding macro"", ""audio"": ""ambient bass with narrator"", ""text"": ""Do you dream in texture? In color?"", ""purpose"": ""material_focus"" }, { ""start"": 3, ""end"": 6, ""visual"": ""Rapid alternating wide shots of a modern sofa in deep teal and olive green"", ""camera"": ""static eye-level wide"", ""audio"": ""narrator"", ""text"": ""Obsessed with designing your sofa?"", ""purpose"": ""color_variation"" }, { ""start"": 6, ""end"": 10, ""visual"": ""Side profile of sofa armrest transitioning between colors followed by hero shot with text overlay"", ""camera"": ""dolly-in and pan"", ""audio"": ""narrator"", ""text"": ""You trendista you. Designer furniture without the designer prices."", ""purpose"": ""brand_close"" }, { ""start"": 10, ""end"": 13, ""visual"": ""Wide shot of a minimalist living room as a woman walks in and sits on a cream sofa"", ""camera"": ""static wide"", ""audio"": ""narrator"", ""text"": ""And we’re obsessed with making sure everyone can customize"", ""purpose"": ""mood_establish"" }, { ""start"": 13, ""end"": 17, ""visual"": ""Woman sits on a grey sofa which morphs into a yellow sofa as she celebrates"", ""camera"": ""static eye-level"", ""audio"": ""narrator"", ""text"": ""at a price that’s as comfortable as this."", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 17, ""end"": 20, ""visual"": ""Top-down overhead views of the woman lounging on the yellow sofa in different positions"", ""camera"": ""static bird-eye view"", ""audio"": ""narrator"", ""text"": ""How’s that feel?"", ""purpose"": ""form_reveal"" }, { ""start"": 20, ""end"": 23, ""visual"": ""Medium shot of the woman relaxing against a yellow pillow followed by close-up of her closing her eyes"", ""camera"": ""medium to close-up cut"", ""audio"": ""ambient luxury music"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 23, ""end"": 26, ""visual"": ""Jonathan Schottenstein speaking from a cream sofa in a bright interior"", ""camera"": ""static medium shot"", ""audio"": ""narrator"", ""text"": ""Jonathan Schottenstein President. We're Designer Looks."", ""purpose"": ""authority_message"" }, { ""start"": 26, ""end"": 30, ""visual"": ""Final hero shot of the yellow sofa with brand logos and website URL appearing"", ""camera"": ""static wide hero shot"", ""audio"": ""narrator with logo sting"", ""text"": ""designerlooks.com. Available at VCF and American Signature Furniture."", ""purpose"": ""cta"" } ] }","{
+  ""video_id"": ""professional_sofa1"",
+  ""acts"": [
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 3 },
+    { ""purpose"": ""brand_close"", ""duration"": 4 },
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 4 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""cta"", ""duration"": 4 }
+  ]
+}","{
+  ""pattern_id"": ""material-to-lifestyle-30s"",
+  ""duration"": 30,
+  ""acts"": [
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 3 },
+    { ""purpose"": ""brand_close"", ""duration"": 4 },
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 4 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""cta"", ""duration"": 4 }
+  ]
+}","{
+  ""video_id"": ""professional_sofa1"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Macro textures of fabric"",
+      ""end_cue"": ""End of fabric slide"",
+      ""camera_behavior"": [""slow sliding macro"", ""extreme close-up""],
+      ""subject_rules"": [""textile textures"", ""multiple color variants""],
+      ""motion_rules"": [""linear lateral slide""],
+      ""sensory_focus"": [""tactile bouclé grain"", ""rich color depth""],
+      ""emotional_intent"": ""sensory curiosity""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Alternating wide shots of sofa"",
+      ""end_cue"": ""End of color cuts"",
+      ""camera_behavior"": [""static eye-level wide""],
+      ""subject_rules"": [""static product"", ""instant color swaps""],
+      ""motion_rules"": [""rapid rhythmic jump cuts""],
+      ""sensory_focus"": [""chromatic range"", ""visual variety""],
+      ""emotional_intent"": ""excitement through choice""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Armrest profile transition"",
+      ""end_cue"": ""Hero shot with text"",
+      ""camera_behavior"": [""dolly-in"", ""pan""],
+      ""subject_rules"": [""product detail to full product"", ""brand value proposition text""],
+      ""motion_rules"": [""continuous tracking"", ""text overlay entrance""],
+      ""sensory_focus"": [""brand identity"", ""quality silhouette""],
+      ""emotional_intent"": ""brand confidence""
+    },
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Woman walks into minimalist room"",
+      ""end_cue"": ""Woman sits on sofa"",
+      ""camera_behavior"": [""static wide shot""],
+      ""subject_rules"": [""human interacting with environment"", ""minimalist interior design""],
+      ""motion_rules"": [""natural subject movement within frame""],
+      ""sensory_focus"": [""spatial openness"", ""aspirational living""],
+      ""emotional_intent"": ""relatability and calm""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Sofa color morph"",
+      ""end_cue"": ""Subject celebration"",
+      ""camera_behavior"": [""static eye-level""],
+      ""subject_rules"": [""expressive human emotion"", ""visual morph effect""],
+      ""motion_rules"": [""seamless product transformation"", ""enthusiastic physical reaction""],
+      ""sensory_focus"": [""joy"", ""vibrant color shift""],
+      ""emotional_intent"": ""satisfaction and delight""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Overhead view of lounging"",
+      ""end_cue"": ""End of lounging positions"",
+      ""camera_behavior"": [""static bird-eye view""],
+      ""subject_rules"": [""top-down product orientation"", ""subject scale""],
+      ""motion_rules"": [""cut-based re-positioning""],
+      ""sensory_focus"": [""spatial footprint"", ""product ergonomics""],
+      ""emotional_intent"": ""admiration of design""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Executive speaking"",
+      ""end_cue"": ""End of speech"",
+      ""camera_behavior"": [""static medium shot""],
+      ""subject_rules"": [""talking head"", ""professional attire"", ""interior background""],
+      ""motion_rules"": [""minimal movement"", ""direct eye contact""],
+      ""sensory_focus"": [""verbal clarity"", ""professional trust""],
+      ""emotional_intent"": ""credibility""
+    },
+    {
+      ""purpose"": ""cta"",
+      ""start_cue"": ""Final hero shot"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static wide hero shot""],
+      ""subject_rules"": [""full product"", ""brand logos"", ""URL text""],
+      ""motion_rules"": [""logo sting animation""],
+      ""sensory_focus"": [""brand recall"", ""actionable information""],
+      ""emotional_intent"": ""decisiveness""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=PoFpdD1LZqY,"Global Settings: 30s total duration, 1080p resolution, 24fps, cinematic narrative aesthetic with a dramatic and humorous tone, warm interior lighting contrasting with low-light shadows, natural domestic color palette. { ""video_id"": ""IKEA_-HER_BOYFRIEND-_Now_There_s_Choice_EN_1080P"", ""duration"": 30, ""shots"": [ { ""start"": 0, ""end"": 11, ""visual"": ""A young man, an older man, and a young woman sit at a crowded dining table in a dimly lit room, eating in awkward silence with rhythmic clicking of cutlery"", ""camera"": ""static eye-level medium-wide"", ""audio"": ""rhythmic cutlery clicking with light background music"", ""text"": ""None"", ""purpose"": ""mood_establish"" }, { ""start"": 11, ""end"": 14, ""visual"": ""The three individuals continue eating as a narrator begins to speak"", ""camera"": ""static eye-level medium-wide"", ""audio"": ""narrator: You can't choose her boyfriend."", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 14, ""end"": 15, ""visual"": ""Fast cuts of different IKEA tables appearing in the same living room space"", ""camera"": ""static wide"", ""audio"": ""narrator: But you can choose your table."", ""text"": ""None"", ""purpose"": ""color_variation"" }, { ""start"": 15, ""end"": 16, ""visual"": ""A wooden expandable table unfolds and then shrinks back into a small square stool"", ""camera"": ""static wide"", ""audio"": ""upbeat rhythmic percussion"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 16, ""end"": 18, ""visual"": ""A glass-top dining table with four chairs appears with product name and price"", ""camera"": ""static wide"", ""audio"": ""ding sound effect"", ""text"": ""GRANÅS table and 4 chairs RM790"", ""purpose"": ""material_focus"" }, { ""start"": 18, ""end"": 26, ""visual"": ""The original three people are now sitting at the spacious glass GRANÅS table, eating comfortably with plenty of room for dishes"", ""camera"": ""static eye-level medium-wide"", ""audio"": ""narrator: Choice."", ""text"": ""SOON, THERE WILL BE CHOICE."", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 26, ""end"": 28, ""visual"": ""The group continues eating as IKEA Tebrau opening information appears on screen"", ""camera"": ""static eye-level medium-wide"", ""audio"": ""narrator: Arriving 16 November."", ""text"": ""IKEA TEBRAU OPENS 16 NOV IKEA.my/Tebrau"", ""purpose"": ""authority_message"" }, { ""start"": 28, ""end"": 30, ""visual"": ""The IKEA logo appears over the scene of the family eating"", ""camera"": ""static eye-level medium-wide"", ""audio"": ""IKEA logo sting music"", ""text"": ""IKEA logo"", ""purpose"": ""brand_close"" } ] }","{
+  ""video_id"": ""IKEA_-HER_BOYFRIEND-_Now_There_s_Choice_EN_1080P"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 11 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 8 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 }
+  ]
+}","{
+  ""pattern_id"": ""narrative-tension-to-solution-30s"",
+  ""duration"": 30,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 11 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 8 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 }
+  ]
+}","{
+  ""video_id"": ""IKEA_-HER_BOYFRIEND-_Now_There_s_Choice_EN_1080P"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Group sitting in awkward silence"",
+      ""end_cue"": ""Start of narration"",
+      ""camera_behavior"": [""static eye-level medium-wide""],
+      ""subject_rules"": [""crowded frame"", ""lack of eye contact"", ""monotonous activity""],
+      ""motion_rules"": [""minimal movement"", ""rhythmic repetitive action""],
+      ""sensory_focus"": [""diegetic sound of cutlery"", ""low-light shadows""],
+      ""emotional_intent"": ""social tension and discomfort""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Fast cuts of different tables"",
+      ""end_cue"": ""Final table transition"",
+      ""camera_behavior"": [""static wide""],
+      ""subject_rules"": [""consistent furniture placement"", ""swapping product models""],
+      ""motion_rules"": [""rapid jump cuts in fixed space""],
+      ""sensory_focus"": [""variety of finishes"", ""room layout consistency""],
+      ""emotional_intent"": ""logical choice""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Table expands and shrinks"",
+      ""end_cue"": ""End of mechanical movement"",
+      ""camera_behavior"": [""static wide""],
+      ""subject_rules"": [""mechanical furniture transformation"", ""space-saving functionality""],
+      ""motion_rules"": [""fast-motion or stop-motion unfolding""],
+      ""sensory_focus"": [""mechanical utility"", ""geometric change""],
+      ""emotional_intent"": ""functional wonder""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Glass-top table appears"",
+      ""end_cue"": ""Product price reveal"",
+      ""camera_behavior"": [""static wide""],
+      ""subject_rules"": [""clean product hero shot"", ""text/price overlay""],
+      ""motion_rules"": [""pop-on entrance""],
+      ""sensory_focus"": [""surface texture (glass/wood)"", ""price-to-value ratio""],
+      ""emotional_intent"": ""purchase justification""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Group sitting at glass table"",
+      ""end_cue"": ""End of narrator 'Choice' beat"",
+      ""camera_behavior"": [""static eye-level medium-wide""],
+      ""subject_rules"": [""spacious frame"", ""relaxed posture"", ""shared meal""],
+      ""motion_rules"": [""fluid human interaction""],
+      ""sensory_focus"": [""brightness/openness"", ""comfortable ergonomics""],
+      ""emotional_intent"": ""domestic harmony""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Opening info overlay"",
+      ""end_cue"": ""Logo appearance"",
+      ""camera_behavior"": [""static medium-wide""],
+      ""subject_rules"": [""graphic text overlay"", ""store location/date""],
+      ""motion_rules"": [""text fade or pop""],
+      ""sensory_focus"": [""logistical clarity""],
+      ""emotional_intent"": ""informational reliability""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Logo overlay on family scene"",
+      ""end_cue"": ""Fade to black"",
+      ""camera_behavior"": [""static medium-wide""],
+      ""subject_rules"": [""brand mark"", ""continuing background action""],
+      ""motion_rules"": [""logo placement"", ""audio sting sync""],
+      ""sensory_focus"": [""brand recognition""],
+      ""emotional_intent"": ""finality and brand warmth""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=Fc3WUerKOfM,"Global Settings: 15s total duration, 1080p resolution, 24fps, cinematic retail aesthetic, upbeat high-energy pop music, bright and airy commercial lighting, warm and sophisticated color palette. { ""video_id"": ""Find_The_Perfect_Sofa_at_Havertys_-_Centennial_15_1080P"", ""duration"": 15, ""shots"": [ { ""start"": 0, ""end"": 1, ""visual"": ""A woman in a red dress enters a Havertys showroom through glass doors"", ""camera"": ""medium tracking shot"", ""audio"": ""upbeat pop music with narrator: All right Havertys."", ""text"": ""HAVERTY"", ""purpose"": ""mood_establish"" }, { ""start"": 1, ""end"": 2, ""visual"": ""Close-up of the woman looking around the showroom with determination"", ""camera"": ""static close-up"", ""audio"": ""narrator: The perfect sofa is out there."", ""text"": ""HAVERTYS"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 2, ""end"": 4, ""visual"": ""The woman walks through a furniture-filled showroom toward a cream leather sofa"", ""camera"": ""wide tracking shot"", ""audio"": ""upbeat music"", ""text"": ""HAVERTYS"", ""purpose"": ""form_reveal"" }, { ""start"": 4, ""end"": 5, ""visual"": ""A clean hero shot of a modern cream leather sofa in a styled living room setting"", ""camera"": ""static medium-wide"", ""audio"": ""music swells"", ""text"": ""HAVERTYS"", ""purpose"": ""color_variation"" }, { ""start"": 5, ""end"": 7, ""visual"": ""Close-up of the woman's hand sliding across the smooth cream leather texture"", ""camera"": ""slow sliding macro"", ""audio"": ""narrator: It's modern, top grain leather."", ""text"": ""HAVERTYS"", ""purpose"": ""material_focus"" }, { ""start"": 7, ""end"": 9, ""visual"": ""The woman falls back onto the sofa in slow motion, enjoying the comfort"", ""camera"": ""medium tracking zoom"", ""audio"": ""high energy vocals"", ""text"": ""HAVERTYS"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 9, ""end"": 11, ""visual"": ""The woman looks up at a store associate with an inquisitive expression"", ""camera"": ""static close-up"", ""audio"": ""narrator: But I need it in brown."", ""text"": ""HAVERTYS"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 11, ""end"": 12, ""visual"": ""An associate presents a brown leather swatch to the woman"", ""camera"": ""close-up insert"", ""audio"": ""upbeat music"", ""text"": ""HAVERTYS"", ""purpose"": ""color_variation"" }, { ""start"": 12, ""end"": 15, ""visual"": ""Transition to a cozy home setting where a woman sits on the brown version of the sofa with a cat and a book"", ""camera"": ""static medium-wide"", ""audio"": ""narrator: We're in heaven."", ""text"": ""HAVERTYS WE FURNISH HAPPINESS"", ""purpose"": ""brand_close"" } ] }","{
+  ""video_id"": ""Find_The_Perfect_Sofa_at_Havertys_-_Centennial_15_1080P"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 4 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""pattern_id"": ""retail-quest-customization-15s"",
+  ""duration"": 15,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 4 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""video_id"": ""Find_The_Perfect_Sofa_at_Havertys_-_Centennial_15_1080P"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Entering showroom doors"",
+      ""end_cue"": ""Transition to close-up"",
+      ""camera_behavior"": [""medium tracking shot""],
+      ""subject_rules"": [""protagonist entering professional retail space"", ""bright commercial lighting""],
+      ""motion_rules"": [""forward kinetic movement""],
+      ""sensory_focus"": [""openness of showroom"", ""airy atmosphere""],
+      ""emotional_intent"": ""anticipation and scale""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Close-up of determination"",
+      ""end_cue"": ""Falling onto sofa"",
+      ""camera_behavior"": [""static close-up"", ""medium tracking zoom""],
+      ""subject_rules"": [""facial expressions of intent"", ""physical contact with product""],
+      ""motion_rules"": [""slow-motion impact"", ""reactive zoom""],
+      ""sensory_focus"": [""comfort"", ""soft landing""],
+      ""emotional_intent"": ""aspiration and physical relief""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Walking through furniture rows"",
+      ""end_cue"": ""Approach to cream sofa"",
+      ""camera_behavior"": [""wide tracking shot""],
+      ""subject_rules"": [""product depth in environment"", ""pathfinding towards hero item""],
+      ""motion_rules"": [""lateral and depth tracking""],
+      ""sensory_focus"": [""furniture silhouettes"", ""showroom curation""],
+      ""emotional_intent"": ""discovery""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Hand sliding on leather"",
+      ""end_cue"": ""End of macro slide"",
+      ""camera_behavior"": [""slow sliding macro""],
+      ""subject_rules"": [""human hand"", ""top-grain leather texture""],
+      ""motion_rules"": [""low-velocity linear glide""],
+      ""sensory_focus"": [""smoothness"", ""grain detail"", ""sheen""],
+      ""emotional_intent"": ""quality assurance""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Hero shot of cream sofa"",
+      ""end_cue"": ""Swatch presentation"",
+      ""camera_behavior"": [""static medium-wide"", ""close-up insert""],
+      ""subject_rules"": [""alternate product colors"", ""physical swatches""],
+      ""motion_rules"": [""quick cut"", ""hand-held presentation""],
+      ""sensory_focus"": [""chromatic contrast (cream vs brown)""],
+      ""emotional_intent"": ""empowerment through choice""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Transition to home setting"",
+      ""end_cue"": ""Final logo lockup"",
+      ""camera_behavior"": [""static medium-wide""],
+      ""subject_rules"": [""finished home environment"", ""brand tagline"", ""logo""],
+      ""motion_rules"": [""scene transition from retail to domestic""],
+      ""sensory_focus"": [""warmth"", ""domestic coziness""],
+      ""emotional_intent"": ""fulfillment and brand resolution""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=kkiJftHG3Wo,"Global Settings: 20s total duration, 1080p resolution, 24fps, high-energy modern lifestyle aesthetic, upbeat rhythmic percussion, bright high-key studio lighting with soft pastel backgrounds, clean and minimalist set design. { ""video_id"": ""MADE.COM Spring 2018 TV Advert - MADE.COM (1080p, h264)"", ""duration"": 20, ""shots"": [ { ""start"": 0, ""end"": 1, ""visual"": ""Large white MADE logo on a neutral grey background"", ""camera"": ""static graphic"", ""audio"": ""upbeat rhythmic drum beat"", ""text"": ""MADE"", ""purpose"": ""mood_establish"" }, { ""start"": 1, ""end"": 2, ""visual"": ""A woman sits at a table with a teal glass, tapping her fingers rhythmically"", ""camera"": ""medium shot, eye-level"", ""audio"": ""synchronized rhythmic tapping"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 2, ""end"": 4, ""visual"": ""The woman peeks over a teal sofa then jumps over the back to sit on it"", ""camera"": ""static wide shot"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 4, ""end"": 6, ""visual"": ""The woman spins a pink armchair among a group of differently colored dining chairs"", ""camera"": ""wide tracking shot"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""color_variation"" }, { ""start"": 6, ""end"": 8, ""visual"": ""Top-down view of a table as a hand arranges minimalist white and grey vases and a succulent"", ""camera"": ""static overhead (90 degrees)"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 8, ""end"": 9, ""visual"": ""A woman's hand waves across the frame against a pastel pink background"", ""camera"": ""medium close-up"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 9, ""end"": 10, ""visual"": ""Close-up of feet in grey socks walking on a geometric patterned rug"", ""camera"": ""low-angle close-up"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""material_focus"" }, { ""start"": 10, ""end"": 12, ""visual"": ""The woman flops onto a grey sofa and kicks her legs up against a tall floor lamp"", ""camera"": ""static wide shot"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 12, ""end"": 13, ""visual"": ""Feet in white socks peek out from under a patterned rug then pull back under"", ""camera"": ""top-down close-up"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 13, ""end"": 14, ""visual"": ""A stop-motion sequence of several different geometric patterned rugs overlapping each other"", ""camera"": ""static overhead"", ""audio"": ""rapid rhythmic percussion"", ""text"": ""None"", ""purpose"": ""color_variation"" }, { ""start"": 14, ""end"": 15, ""visual"": ""Extreme close-up of a woman's mouth as she laughs and looks directly at the camera"", ""camera"": ""static macro"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 15, ""end"": 16, ""visual"": ""Three desk lamps in blue, silver, and copper colors bounce rhythmically in the center of the frame"", ""camera"": ""static medium shot"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""color_variation"" }, { ""start"": 16, ""end"": 17, ""visual"": ""A stack of neutral-toned plates and bowls grows taller through stop-motion"", ""camera"": ""static medium shot"", ""audio"": ""rhythmic percussion"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 17, ""end"": 20, ""visual"": ""The woman jumps into a pink bed and covers herself with a blanket as the MADE.COM logo appears"", ""camera"": ""static high-angle wide"", ""audio"": ""final rhythmic beat and logo sting"", ""text"": ""MADE.COM NEW COLLECTION"", ""purpose"": ""brand_close"" } ] }","{
+  ""video_id"": ""MADE.COM Spring 2018 TV Advert - MADE.COM (1080p, h264)"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 1 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""pattern_id"": ""rhythmic-lifestyle-montage-20s"",
+  ""duration"": 20,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""material_focus"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 1 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 1 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""video_id"": ""MADE.COM Spring 2018 TV Advert - MADE.COM (1080p, h264)"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Logo on neutral background"",
+      ""end_cue"": ""Start of finger tapping"",
+      ""camera_behavior"": [""static graphic""],
+      ""subject_rules"": [""minimalist typography"", ""solid background""],
+      ""motion_rules"": [""instant pop-on""],
+      ""sensory_focus"": [""brand clarity"", ""percussive start""],
+      ""emotional_intent"": ""brand introduction""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Finger tapping on table"",
+      ""end_cue"": ""Jump over sofa seat"",
+      ""camera_behavior"": [""medium shot"", ""static wide shot""],
+      ""subject_rules"": [""playful human movement"", ""interaction with product""],
+      ""motion_rules"": [""synchronized to beat"", ""kinetic jumping""],
+      ""sensory_focus"": [""vibrant energy"", ""human personality""],
+      ""emotional_intent"": ""youthful joy""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Spinning pink armchair"",
+      ""end_cue"": ""Three bouncing lamps"",
+      ""camera_behavior"": [""wide tracking"", ""static medium shot""],
+      ""subject_rules"": [""multiple color SKUs"", ""dynamic subject rotation""],
+      ""motion_rules"": [""rhythmic stop-motion"", ""spinning/bouncing""],
+      ""sensory_focus"": [""pastel color palette"", ""product diversity""],
+      ""emotional_intent"": ""visual playfulness""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Top-down vase arrangement"",
+      ""end_cue"": ""Stop-motion plate stack"",
+      ""camera_behavior"": [""static overhead"", ""static medium shot""],
+      ""subject_rules"": [""geometric silhouettes"", ""accessory curation""],
+      ""motion_rules"": [""rapid stop-motion appearing""],
+      ""sensory_focus"": [""minimalist shapes"", ""clean edges""],
+      ""emotional_intent"": ""design appreciation""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Feet in grey socks on rug"",
+      ""end_cue"": ""Close-up of sock walk end"",
+      ""camera_behavior"": [""low-angle close-up""],
+      ""subject_rules"": [""soft textiles"", ""patterned rugs""],
+      ""motion_rules"": [""rhythmic stepping""],
+      ""sensory_focus"": [""tactile rug weave"", ""softness""],
+      ""emotional_intent"": ""cozy comfort""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Jump into pink bed"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static high-angle wide""],
+      ""subject_rules"": [""final product hero"", ""logo lockup""],
+      ""motion_rules"": [""curtain-call motion"", ""logo fade""],
+      ""sensory_focus"": [""brand resolution"", ""vibrant pink hues""],
+      ""emotional_intent"": ""final satisfaction""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=PBjSQIROzis,"Global Settings: 30s total duration, 1080p resolution, 24fps, high-fashion editorial aesthetic, rhythmic counting narration, minimalist high-end interior lighting with deep shadows, bold magenta and cream color palette. { ""video_id"": ""Ad Campaign PERRY - FLEXFORM (1080p, h264)"", ""duration"": 30, ""shots"": [ { ""start"": 0, ""end"": 4, ""visual"": ""A woman in a vibrant magenta blazer carries a stack of white porcelain dishes which then crash onto a textured rug"", ""camera"": ""medium shot to low-angle close-up"", ""audio"": ""sounds of ceramic breaking"", ""text"": ""None"", ""purpose"": ""mood_establish"" }, { ""start"": 4, ""end"": 5, ""visual"": ""Solid red background with white brand text"", ""camera"": ""static graphic"", ""audio"": ""silence"", ""text"": ""FLEXFORM presents"", ""purpose"": ""brand_close"" }, { ""start"": 5, ""end"": 7, ""visual"": ""Wide shot of a modular cream sofa in a minimalist room as a woman in magenta walks behind it"", ""camera"": ""static wide shot"", ""audio"": ""narrator: One"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 7, ""end"": 9, ""visual"": ""The woman lies down on the sofa cushions"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Two"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 9, ""end"": 11, ""visual"": ""The woman sits upright on a different section of the modular sofa"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Three"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 11, ""end"": 13, ""visual"": ""The woman lies on a matching cream ottoman reading a magazine"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Four"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 13, ""end"": 15, ""visual"": ""The woman lies face down across the main sofa section"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Five, Six, Seven, Eight"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 15, ""end"": 17, ""visual"": ""The woman sits on the edge of the sofa drinking from a white cup"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Nine, Ten"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 17, ""end"": 20, ""visual"": ""The woman lounge across the modular corner and kicks her legs up"", ""camera"": ""static wide shot"", ""audio"": ""narrator: Eleven, Twelve"", ""text"": ""None"", ""purpose"": ""form_reveal"" }, { ""start"": 20, ""end"": 25, ""visual"": ""The woman leans against the sofa cushions and finally sits at the modular edge"", ""camera"": ""static wide shot"", ""audio"": ""narrator counting rapidly from Thirteen to Twenty-One"", ""text"": ""None"", ""purpose"": ""lifestyle_emotion"" }, { ""start"": 25, ""end"": 30, ""visual"": ""Red background with white text credits for the sofa design and campaign"", ""camera"": ""static graphic"", ""audio"": ""narrator: Twenty-Two, Twenty-Three"", ""text"": ""The Perry Sofa designed by Antonio Citterio featuring Lindsey Wixson photography Pierpaolo Ferrari"", ""purpose"": ""authority_message"" } ] }","{
+  ""video_id"": ""Ad Campaign PERRY - FLEXFORM (1080p, h264)"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 4 },
+    { ""purpose"": ""brand_close"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 5 },
+    { ""purpose"": ""authority_message"", ""duration"": 5 }
+  ]
+}","{
+  ""pattern_id"": ""conceptual-serialism-30s"",
+  ""duration"": 30,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 4 },
+    { ""purpose"": ""brand_close"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 5 },
+    { ""purpose"": ""authority_message"", ""duration"": 5 }
+  ]
+}","{
+  ""video_id"": ""Ad Campaign PERRY - FLEXFORM (1080p, h264)"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Woman carrying porcelain dishes"",
+      ""end_cue"": ""Dishes crashing on rug"",
+      ""camera_behavior"": [""medium shot"", ""low-angle close-up""],
+      ""subject_rules"": [""high-fashion attire"", ""abstract narrative action"", ""dramatic lighting""],
+      ""motion_rules"": [""deliberate walk"", ""sudden chaotic impact""],
+      ""sensory_focus"": [""auditory contrast (silence to crash)"", ""visual texture of ceramic""],
+      ""emotional_intent"": ""artistic disruption""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Woman walks behind cream sofa"",
+      ""end_cue"": ""Lounge across modular corner"",
+      ""camera_behavior"": [""static wide shot""],
+      ""subject_rules"": [""modular product sections"", ""minimalist architecture""],
+      ""motion_rules"": [""subject-led exploration of product scale""],
+      ""sensory_focus"": [""cream-on-cream tonality"", ""structural silhouette""],
+      ""emotional_intent"": ""architectural admiration""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Lying on sofa cushions"",
+      ""end_cue"": ""Sitting at modular edge"",
+      ""camera_behavior"": [""static wide shot""],
+      ""subject_rules"": [""low-velocity human poses"", ""domestic activities (reading, drinking)""],
+      ""motion_rules"": [""repetitive re-positioning"", ""rhythmic counting sync""],
+      ""sensory_focus"": [""physical relaxation"", ""softness of upholstery""],
+      ""emotional_intent"": ""sophisticated leisure""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Red background with text credits"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static graphic""],
+      ""subject_rules"": [""high-contrast typography"", ""designer name drops""],
+      ""motion_rules"": [""static hold""],
+      ""sensory_focus"": [""color saturation (bold red)"", ""curatorial information""],
+      ""emotional_intent"": ""prestige and pedigree""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=5v9gsgK57E4,"{
+  ""video_id"": ""What Makes a Luxury Mattress Saatva - Saatva"",
+  ""duration"": 45,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 3,
+      ""visual"": ""A woman in heels walks down a hallway and into a luxurious bedroom."",
+      ""camera"": ""low-angle tracking to eye-level wide"",
+      ""audio"": ""If you know luxury, it’s not just award-winning."",
+      ""text"": null,
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 3,
+      ""end"": 6,
+      ""visual"": ""A close-up of the Saatva Classic logo on a mattress, followed by a woman falling back onto the bed."",
+      ""camera"": ""macro to high-angle overhead"",
+      ""audio"": ""It’s rewarding."",
+      ""text"": ""saatva Classic"",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 6,
+      ""end"": 15,
+      ""visual"": ""A young girl playing guitar on a mattress while a woman interacts with her in a decorated child's room."",
+      ""camera"": ""eye-level medium to wide"",
+      ""audio"": ""Durable and supportive, with tempered steel coils and plush organic cotton. With a dual-sided design to support growing bodies."",
+      ""text"": null,
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 15,
+      ""end"": 20,
+      ""visual"": ""A woman meditating on a mattress in a sunlit room, followed by a hand touching the Zenhaven latex surface."",
+      ""camera"": ""wide shot to extreme close-up"",
+      ""audio"": ""Float on a zen cloud of pure hypoallergenic latex."",
+      ""text"": ""saatva Zenhaven"",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 20,
+      ""end"": 26,
+      ""visual"": ""A man sits down and lies back on a Loom & Leaf memory foam mattress."",
+      ""camera"": ""sliding wide to medium close-up"",
+      ""audio"": ""Or take all the pressure away with ultra-premium five-pound memory foam."",
+      ""text"": ""saatva Loom & Leaf"",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 26,
+      ""end"": 30,
+      ""visual"": ""Footage of a worker using a large industrial sewing machine and an automated embroidery machine stitching the brand name."",
+      ""camera"": ""wide industrial shot to macro"",
+      ""audio"": ""Luxury is handcrafted in American factories..."",
+      ""text"": ""saatva"",
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 30,
+      ""end"": 33,
+      ""visual"": ""A woman sitting at a desk looking at a laptop screen showing a Saatva delivery truck."",
+      ""camera"": ""over-the-shoulder medium"",
+      ""audio"": ""...and delivered directly to customers with no retail middleman."",
+      ""text"": null,
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 33,
+      ""end"": 38,
+      ""visual"": ""A delivery team brings a new mattress into a home and sets it up on a bed frame while the woman watches."",
+      ""camera"": ""medium shot"",
+      ""audio"": ""Using the most efficient in-home white glove delivery network in the country."",
+      ""text"": null,
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 38,
+      ""end"": 45,
+      ""visual"": ""The Saatva logo and website appear on a neutral background."",
+      ""camera"": ""static graphic"",
+      ""audio"": ""Luxury mattresses at prices that won’t keep you up all night."",
+      ""text"": ""saatva.com SMARTER LUXURY SLEEP"",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""What Makes a Luxury Mattress Saatva - Saatva"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 9 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""material_focus"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 4 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 5 },
+    { ""purpose"": ""brand_close"", ""duration"": 7 }
+  ]
+}","{
+  ""pattern_id"": ""trust-architect-45s"",
+  ""duration"": 45,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 9 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""material_focus"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 4 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 5 },
+    { ""purpose"": ""brand_close"", ""duration"": 7 }
+  ]
+}","{
+  ""video_id"": ""What Makes a Luxury Mattress Saatva - Saatva"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Woman in heels walking hallway"",
+      ""end_cue"": ""Entering bedroom"",
+      ""camera_behavior"": [""low-angle tracking"", ""eye-level wide""],
+      ""subject_rules"": [""luxury attire"", ""high-end architecture"", ""spacious interior""],
+      ""motion_rules"": [""steady forward tracking""],
+      ""sensory_focus"": [""opulence"", ""quiet elegance""],
+      ""emotional_intent"": ""aspirational desire""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Logo close-up on mattress"",
+      ""end_cue"": ""Falling back onto bed"",
+      ""camera_behavior"": [""macro"", ""high-angle overhead""],
+      ""subject_rules"": [""brand logo"", ""mattress surface"", ""human impact""],
+      ""motion_rules"": [""zoom out"", ""slow-motion fall""],
+      ""sensory_focus"": [""brand recognition"", ""softness""],
+      ""emotional_intent"": ""instant relief""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Child playing guitar"",
+      ""end_cue"": ""Delivery team setup"",
+      ""camera_behavior"": [""eye-level medium to wide"", ""medium shot""],
+      ""subject_rules"": [""family interaction"", ""service delivery teams"", ""home environment""],
+      ""motion_rules"": [""naturalistic candid movement""],
+      ""sensory_focus"": [""familial warmth"", ""hassle-free service""],
+      ""emotional_intent"": ""domestic peace and convenience""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Meditating to latex touch"",
+      ""end_cue"": ""Memory foam recline"",
+      ""camera_behavior"": [""wide shot"", ""extreme close-up"", ""sliding wide""],
+      ""subject_rules"": [""hands touching surfaces"", ""internal components text"", ""specialized materials (latex/foam)""],
+      ""motion_rules"": [""slow-glide"", ""tactile interaction""],
+      ""sensory_focus"": [""texture specificity"", ""hypoallergenic properties""],
+      ""emotional_intent"": ""technical confidence""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Factory sewing machine"",
+      ""end_cue"": ""Laptop screen showing truck"",
+      ""camera_behavior"": [""wide industrial shot"", ""macro"", ""over-the-shoulder""],
+      ""subject_rules"": [""manufacturing machinery"", ""skilled labor"", ""supply chain graphics""],
+      ""motion_rules"": [""industrial mechanical motion"", ""rapid precision stitching""],
+      ""sensory_focus"": [""handcrafted quality"", ""American-made heritage"", ""direct-to-consumer logic""],
+      ""emotional_intent"": ""intellectual trust and patriotism""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Final logo on neutral background"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static graphic""],
+      ""subject_rules"": [""logo lockup"", ""website URL"", ""value-based tagline""],
+      ""motion_rules"": [""static hold with text animation""],
+      ""sensory_focus"": [""brand colors"", ""clarity of offer""],
+      ""emotional_intent"": ""decisive value""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=iclLe7GECZ0,"{
+  ""video_id"": ""B Roll video for Upholstered Furniture Production"",
+  ""duration"": 45,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 2,
+      ""visual"": ""A man in a flat cap and suspenders stands in a dark room, looking down."",
+      ""camera"": ""Static medium shot"",
+      ""audio"": ""Fast-paced rhythmic percussion"",
+      ""text"": null,
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 2,
+      ""end"": 8,
+      ""visual"": ""Close-ups of the man sketching a chair design with a pencil on paper."",
+      ""camera"": ""Macro and over-the-shoulder switches"",
+      ""audio"": ""Pencil scratching sounds synced with beat"",
+      ""text"": null,
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 8,
+      ""end"": 10,
+      ""visual"": ""The man holds out a pencil; shot cuts to black leather gloves on the desk."",
+      ""camera"": ""Point-of-view and static top-down"",
+      ""audio"": ""Sharp percussive hits"",
+      ""text"": null,
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 10,
+      ""end"": 16,
+      ""visual"": ""The man puts on the black leather gloves and flexes his hands."",
+      ""camera"": ""Medium shot with quick cuts"",
+      ""audio"": ""Leather stretching/creaking sounds"",
+      ""text"": null,
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 16,
+      ""end"": 20,
+      ""visual"": ""Tools like a stapler, drill, and knife slide across the workbench."",
+      ""camera"": ""Low-angle sliding shots"",
+      ""audio"": ""Metallic sliding sounds"",
+      ""text"": null,
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 20,
+      ""end"": 27,
+      ""visual"": ""A hand in a leather glove flips through a colorful fabric swatch book."",
+      ""camera"": ""Top-down and macro detail shots"",
+      ""audio"": ""Fabric rustling sounds"",
+      ""text"": null,
+      ""purpose"": ""color_variation""
+    },
+    {
+      ""start"": 27,
+      ""end"": 30,
+      ""visual"": ""A circular saw cuts through wood; a blade cuts through thick white foam."",
+      ""camera"": ""Extreme close-up macro"",
+      ""audio"": ""Mechanical cutting sounds"",
+      ""text"": null,
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 30,
+      ""end"": 38,
+      ""visual"": ""The man operates a sewing machine, stitching fabric with precision."",
+      ""camera"": ""Top-down wide to macro needle shots"",
+      ""audio"": ""Sewing machine rhythmic clicking"",
+      ""text"": null,
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 38,
+      ""end"": 45,
+      ""visual"": ""Details of the finished chair: metal armrest, brand tag, and full product reveal."",
+      ""camera"": ""Cinematic pans and static wide"",
+      ""audio"": ""Crescendo to final beat"",
+      ""text"": ""Ай Как Мягко"",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""B Roll video for Upholstered Furniture Production"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""mood_establish"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 4 },
+    { ""purpose"": ""color_variation"", ""duration"": 7 },
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 8 },
+    { ""purpose"": ""brand_close"", ""duration"": 7 }
+  ]
+}","{
+  ""pattern_id"": ""craftsmanship-process-45s"",
+  ""duration"": 45,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""mood_establish"", ""duration"": 6 },
+    { ""purpose"": ""authority_message"", ""duration"": 4 },
+    { ""purpose"": ""color_variation"", ""duration"": 7 },
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 8 },
+    { ""purpose"": ""brand_close"", ""duration"": 7 }
+  ]
+}","{
+  ""video_id"": ""B Roll video for Upholstered Furniture Production"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Man in suspenders in dark room"",
+      ""end_cue"": ""Hands flexing in leather gloves"",
+      ""camera_behavior"": [""static medium shot"", ""medium shot with quick cuts""],
+      ""subject_rules"": [""period-accurate workwear"", ""low-key dramatic lighting"", ""hand preparation""],
+      ""motion_rules"": [""stillness vs rapid cuts"", ""flexing/tugging""],
+      ""sensory_focus"": [""leather creaking"", ""atmospheric shadows""],
+      ""emotional_intent"": ""reverence for labor""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Sketching design with pencil"",
+      ""end_cue"": ""Final chair reveal"",
+      ""camera_behavior"": [""macro"", ""over-the-shoulder"", ""cinematic pans""],
+      ""subject_rules"": [""drafting paper"", ""pencil lead"", ""final product silhouette""],
+      ""motion_rules"": [""rhythmic sketching"", ""sweeping camera pans""],
+      ""sensory_focus"": [""graphite texture"", ""pencil scratching sounds""],
+      ""emotional_intent"": ""intellectual creation""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Holding out pencil"",
+      ""end_cue"": ""Tools sliding across workbench"",
+      ""camera_behavior"": [""point-of-view"", ""static top-down"", ""low-angle sliding""],
+      ""subject_rules"": [""specialized hand tools"", ""workshop environment""],
+      ""motion_rules"": [""sharp percussive movements"", ""lateral tool slides""],
+      ""sensory_focus"": [""metallic clinking"", ""industrial readiness""],
+      ""emotional_intent"": ""expertise and preparedness""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Flipping through swatch book"",
+      ""end_cue"": ""End of fabric rustling"",
+      ""camera_behavior"": [""top-down"", ""macro detail shots""],
+      ""subject_rules"": [""fabric swatches"", ""gloved hand""],
+      ""motion_rules"": [""rapid rhythmic flipping""],
+      ""sensory_focus"": [""fabric rustle"", ""color spectrum""],
+      ""emotional_intent"": ""material choice""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Circular saw cutting wood"",
+      ""end_cue"": ""Sewing machine needle macro"",
+      ""camera_behavior"": [""extreme close-up macro"", ""top-down wide""],
+      ""subject_rules"": [""raw timber"", ""foam"", ""industrial sewing needle""],
+      ""motion_rules"": [""mechanical rotation"", ""vertical needle oscillation""],
+      ""sensory_focus"": [""mechanical cutting sounds"", ""rhythmic clicking""],
+      ""emotional_intent"": ""tactile honesty""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Close up of brand tag"",
+      ""end_cue"": ""Full product reveal with text"",
+      ""camera_behavior"": [""cinematic pans"", ""static wide""],
+      ""subject_rules"": [""brand tag"", ""finished furniture"", ""Cyrillic logo text""],
+      ""motion_rules"": [""crescendo movement""],
+      ""sensory_focus"": [""finished quality"", ""brand identity""],
+      ""emotional_intent"": ""pride in completion""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=1jC2HrunzPw,"{
+  ""video_id"": ""Identity Furniture Brand Reveal - Crafting Corporate Stories"",
+  ""duration"": 37,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 3,
+      ""visual"": ""A craftsman uses a blowtorch and welding tool on a curved metal frame."",
+      ""camera"": ""close-up, shallow depth of field"",
+      ""audio"": ""atmospheric synth and narrator"",
+      ""text"": ""What if you had the freedom to go further than you ever have?"",
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 3,
+      ""end"": 7,
+      ""visual"": ""Hands measuring wood planks and a close-up of a finished wood and metal edge."",
+      ""camera"": ""medium shot to macro"",
+      ""audio"": ""narrator"",
+      ""text"": ""To dream and build those dreams by hand."",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 7,
+      ""end"": 10,
+      ""visual"": ""A wood router carving a groove into timber with sawdust flying."",
+      ""camera"": ""low-angle macro"",
+      ""audio"": ""mechanical whirring and narrator"",
+      ""text"": ""To lead and be constantly inspired."",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 10,
+      ""end"": 13,
+      ""visual"": ""A worker handling a large wooden beam followed by a table saw cutting through a board."",
+      ""camera"": ""medium shot to eye-level close-up"",
+      ""audio"": ""narrator"",
+      ""text"": ""To follow your heart and break new ground."",
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 13,
+      ""end"": 18,
+      ""visual"": ""A hand wiping a finished surface and another hand applying grout to a tiled tabletop."",
+      ""camera"": ""extreme close-up"",
+      ""audio"": ""narrator"",
+      ""text"": ""A legacy built on conviction."",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 18,
+      ""end"": 23,
+      ""visual"": ""An angle grinder creating sparks and a hammer hitting a wooden joint."",
+      ""camera"": ""medium shot"",
+      ""audio"": ""narrator"",
+      ""text"": ""For us, Australian made means Australian made."",
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 23,
+      ""end"": 25,
+      ""visual"": ""A man wearing a black 'identity. FURNITURE' polo shirt."",
+      ""camera"": ""medium portrait shot"",
+      ""audio"": ""narrator"",
+      ""text"": ""And imagination is what drives us into the future."",
+      ""purpose"": ""brand_close""
+    },
+    {
+      ""start"": 25,
+      ""end"": 29,
+      ""visual"": ""A curved wooden frame being moved and a hand sketching a chair design on paper."",
+      ""camera"": ""medium shot to top-down close-up"",
+      ""audio"": ""narrator"",
+      ""text"": ""Beautiful. Bold."",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 29,
+      ""end"": 31,
+      ""visual"": ""A hand smoothing out the fabric on a finished teal upholstered chair."",
+      ""camera"": ""close-up"",
+      ""audio"": ""narrator"",
+      ""text"": ""Creative and certain."",
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 31,
+      ""end"": 37,
+      ""visual"": ""A row of various designer chairs on a shelf, followed by the brand logo on a black background."",
+      ""camera"": ""sliding wide shot to static logo"",
+      ""audio"": ""narrator and fading music"",
+      ""text"": ""identity. FURNITURE Empowering Creativity..."",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""Identity Furniture Brand Reveal - Crafting Corporate Stories"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 4 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""authority_message"", ""duration"": 5 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 4 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 6 }
+  ]
+}","{
+  ""pattern_id"": ""authentic-maker-37s"",
+  ""duration"": 37,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 4 },
+    { ""purpose"": ""form_reveal"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""authority_message"", ""duration"": 5 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 4 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 6 }
+  ]
+}","{
+  ""video_id"": ""Identity Furniture Brand Reveal - Crafting Corporate Stories"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Blowtorch on metal frame"",
+      ""end_cue"": ""End of shallow focus shot"",
+      ""camera_behavior"": [""close-up"", ""shallow depth of field""],
+      ""subject_rules"": [""industrial heat/light"", ""raw metal skeletons""],
+      ""motion_rules"": [""slow hand movement"", ""organic flicker of flame""],
+      ""sensory_focus"": [""atmospheric heat"", ""industrial sparks""],
+      ""emotional_intent"": ""inspiring creativity""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Measuring wood planks"",
+      ""end_cue"": ""Applying grout to tiles"",
+      ""camera_behavior"": [""medium shot"", ""macro"", ""extreme close-up""],
+      ""subject_rules"": [""raw timber"", ""metal edges"", ""handheld tools"", ""surface finishes""],
+      ""motion_rules"": [""precise tactile wiping"", ""measuring gestures""],
+      ""sensory_focus"": [""grain detail"", ""surface smoothness""],
+      ""emotional_intent"": ""tangible quality""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Wood router carving groove"",
+      ""end_cue"": ""Hand sketching chair design"",
+      ""camera_behavior"": [""low-angle macro"", ""top-down close-up""],
+      ""subject_rules"": [""machinery in action"", ""evolving furniture curves"", ""sketches""],
+      ""motion_rules"": [""sawdust flying"", ""circular carving motion"", ""sketching lines""],
+      ""sensory_focus"": [""geometric precision"", ""mechanical power""],
+      ""emotional_intent"": ""design innovation""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Handling large wooden beam"",
+      ""end_cue"": ""Hammer hitting wooden joint"",
+      ""camera_behavior"": [""medium shot"", ""eye-level close-up""],
+      ""subject_rules"": [""skilled workers"", ""heavy materials"", ""sturdy joints""],
+      ""motion_rules"": [""lifting/carrying"", ""forceful impact""],
+      ""sensory_focus"": [""domestic origin (Australian made)"", ""structural integrity""],
+      ""emotional_intent"": ""heritage and trust""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Smoothing fabric on teal chair"",
+      ""end_cue"": ""End of fabric touch"",
+      ""camera_behavior"": [""close-up""],
+      ""subject_rules"": [""finished upholstery"", ""human hand-to-fabric contact""],
+      ""motion_rules"": [""soft caressing motion""],
+      ""sensory_focus"": [""textile comfort"", ""color vibrancy""],
+      ""emotional_intent"": ""sensory satisfaction""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Man in branded polo"",
+      ""end_cue"": ""Final static logo"",
+      ""camera_behavior"": [""medium portrait shot"", ""sliding wide shot"", ""static logo""],
+      ""subject_rules"": [""company representative"", ""product lineup"", ""brand mark""],
+      ""motion_rules"": [""slow lateral slide"", ""fading to black""],
+      ""sensory_focus"": [""brand identity"", ""product range diversity""],
+      ""emotional_intent"": ""professional finality""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=QVRxn_p2yWk,"{
+  ""video_id"": ""The Perfect Day - Value City Furniture"",
+  ""duration"": 29,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 1,
+      ""visual"": ""Value City Furniture logo on a black background"",
+      ""camera"": ""static"",
+      ""audio"": ""upbeat jazz music"",
+      ""text"": null,
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 1,
+      ""end"": 6,
+      ""visual"": ""A brown leather sectional sofa in a dark studio, transitioning to a bright white studio"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""narrator and upbeat jazz"",
+      ""text"": ""Picture this. It's perfect out. You feel like you should be outside. But, you stay in."",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 6,
+      ""end"": 11,
+      ""visual"": ""Close-ups of brown leather stitching and the smooth texture of the sofa cushions"",
+      ""camera"": ""slow sliding macro"",
+      ""audio"": ""narrator"",
+      ""text"": ""Because Italian leather smells better than fresh flowers."",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 11,
+      ""end"": 15,
+      ""visual"": ""Close-ups of green fabric textures and a wide shot of a green velvet sectional"",
+      ""camera"": ""macro to eye-level wide"",
+      ""audio"": ""narrator"",
+      ""text"": ""And the richest greens are right here, not in the backyard."",
+      ""purpose"": ""color_variation""
+    },
+    {
+      ""start"": 15,
+      ""end"": 18,
+      ""visual"": ""A white tufted sofa reclining automatically with an integrated reading light"",
+      ""camera"": ""eye-level medium"",
+      ""audio"": ""narrator"",
+      ""text"": ""And patio furniture, it can't do this."",
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 18,
+      ""end"": 21,
+      ""visual"": ""A series of quick cuts showing different sofa headrests and reclining mechanisms"",
+      ""camera"": ""medium close-ups"",
+      ""audio"": ""narrator"",
+      ""text"": ""So if the forecast calls for rain tomorrow..."",
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 21,
+      ""end"": 29,
+      ""visual"": ""Various furnished living room setups featuring the brown, white, and green sofas with the VCF logo"",
+      ""camera"": ""wide shots"",
+      ""audio"": ""narrator"",
+      ""text"": ""Perfect. At Value City Furniture, you don't have to picture it. You can experience it."",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""The Perfect Day - Value City Furniture"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 5 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""color_variation"", ""duration"": 4 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""brand_close"", ""duration"": 8 }
+  ]
+}","{
+  ""pattern_id"": ""studio-sensory-contrast-30s"",
+  ""duration"": 29,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 5 },
+    { ""purpose"": ""material_focus"", ""duration"": 5 },
+    { ""purpose"": ""color_variation"", ""duration"": 4 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""authority_message"", ""duration"": 3 },
+    { ""purpose"": ""brand_close"", ""duration"": 8 }
+  ]
+}","{
+  ""video_id"": ""The Perfect Day - Value City Furniture"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Logo on black background"",
+      ""end_cue"": ""Transition to sofa"",
+      ""camera_behavior"": [""static""],
+      ""subject_rules"": [""brand logo"", ""negative space""],
+      ""motion_rules"": [""instant pop-on""],
+      ""sensory_focus"": [""audio-visual synchronization (jazz)""],
+      ""emotional_intent"": ""sophisticated invitation""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Sofa in dark studio"",
+      ""end_cue"": ""Sofa in white studio"",
+      ""camera_behavior"": [""eye-level wide""],
+      ""subject_rules"": [""full product silhouette"", ""lighting-based environment shift""],
+      ""motion_rules"": [""lighting fade/transition""],
+      ""sensory_focus"": [""product scale"", ""silhouette clarity""],
+      ""emotional_intent"": ""aesthetic admiration""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Close-up of leather stitching"",
+      ""end_cue"": ""End of leather macro slide"",
+      ""camera_behavior"": [""slow sliding macro""],
+      ""subject_rules"": [""stitching detail"", ""supple leather texture""],
+      ""motion_rules"": [""lateral linear glide""],
+      ""sensory_focus"": [""tactile quality"", ""craftsmanship detail""],
+      ""emotional_intent"": ""quality reassurance""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Green fabric textures"",
+      ""end_cue"": ""Wide shot of green sectional"",
+      ""camera_behavior"": [""macro to eye-level wide""],
+      ""subject_rules"": [""vibrant textile colors"", ""velvet material""],
+      ""motion_rules"": [""cut from detail to whole""],
+      ""sensory_focus"": [""chromatic richness"", ""fabric sheen""],
+      ""emotional_intent"": ""visual desire""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""White sofa reclining"",
+      ""end_cue"": ""Reading light activation"",
+      ""camera_behavior"": [""eye-level medium""],
+      ""subject_rules"": [""automated furniture movement"", ""integrated technology features""],
+      ""motion_rules"": [""mechanical recline""],
+      ""sensory_focus"": [""functional comfort"", ""convenience""],
+      ""emotional_intent"": ""leisure envy""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Quick cuts of headrests"",
+      ""end_cue"": ""End of reclining series"",
+      ""camera_behavior"": [""medium close-ups""],
+      ""subject_rules"": [""mechanical components"", ""various model features""],
+      ""motion_rules"": [""rapid rhythmic cutting""],
+      ""sensory_focus"": [""engineering variety"", ""choice""],
+      ""emotional_intent"": ""brand expertise""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Various living room setups"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""wide shots""],
+      ""subject_rules"": [""fully furnished interiors"", ""VCF logo lockup""],
+      ""motion_rules"": [""scene montage""],
+      ""sensory_focus"": [""lifestyle fulfillment"", ""brand accessibility""],
+      ""emotional_intent"": ""decisive resolution""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=VpMrVoEZW94,"{
+  ""video_id"": ""The Perfect Day - Value City Furniture 15s"",
+  ""duration"": 15,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 1,
+      ""visual"": ""Value City Furniture logo on a black background"",
+      ""camera"": ""static"",
+      ""audio"": ""soft percussion"",
+      ""text"": ""N/A"",
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 1,
+      ""end"": 3,
+      ""visual"": ""Wide shot of a brown leather sectional in a minimalist grey studio"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""narrator: Picture this. It's perfect out."",
+      ""text"": ""N/A"",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 3,
+      ""end"": 6,
+      ""visual"": ""Fast cuts of fabric textures: brown leather, green velvet, and white tufted fabric with a reclining feature"",
+      ""camera"": ""close-up / macro tracking"",
+      ""audio"": ""narrator: But you're staying in. Because with the right furniture..."",
+      ""text"": ""N/A"",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 6,
+      ""end"": 9,
+      ""visual"": ""The brown leather sectional is now shown in a fully decorated, sunlit living room with ocean views"",
+      ""camera"": ""slow zoom out"",
+      ""audio"": ""narrator: ...this is the perfect way to spend the day."",
+      ""text"": ""N/A"",
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 9,
+      ""end"": 13,
+      ""visual"": ""A sequence of different sectional styles and colors (dark grey, white, and olive green) in stylized living room settings"",
+      ""camera"": ""static wide with logo overlay"",
+      ""audio"": ""narrator: At Value City Furniture, you don't have to picture it."",
+      ""text"": ""VALUE CITY FURNITURE"",
+      ""purpose"": ""color_variation""
+    },
+    {
+      ""start"": 13,
+      ""end"": 15,
+      ""visual"": ""Final shot of the olive green sectional in a modern living room"",
+      ""camera"": ""static wide with logo overlay"",
+      ""audio"": ""narrator: You can experience it."",
+      ""text"": ""VALUE CITY FURNITURE"",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""The Perfect Day - Value City Furniture 15s"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 4 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 }
+  ]
+}","{
+  ""pattern_id"": ""high-velocity-variety-15s"",
+  ""duration"": 15,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 1 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""material_focus"", ""duration"": 3 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 3 },
+    { ""purpose"": ""color_variation"", ""duration"": 4 },
+    { ""purpose"": ""brand_close"", ""duration"": 2 }
+  ]
+}","{
+  ""video_id"": ""The Perfect Day - Value City Furniture 15s"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Logo on black background"",
+      ""end_cue"": ""Start of percussion"",
+      ""camera_behavior"": [""static""],
+      ""subject_rules"": [""brand logo"", ""minimalist audio""],
+      ""motion_rules"": [""instant pop-on""],
+      ""sensory_focus"": [""brand identity""],
+      ""emotional_intent"": ""calm introduction""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Sofa in grey studio"",
+      ""end_cue"": ""End of wide shot"",
+      ""camera_behavior"": [""eye-level wide""],
+      ""subject_rules"": [""solitary product"", ""neutral background""],
+      ""motion_rules"": [""static hold""],
+      ""sensory_focus"": [""silhouette clarity"", ""spatial footprint""],
+      ""emotional_intent"": ""unfiltered product focus""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Fast cuts of fabric textures"",
+      ""end_cue"": ""End of reclining feature shot"",
+      ""camera_behavior"": [""close-up"", ""macro tracking""],
+      ""subject_rules"": [""textile variety (velvet/leather)"", ""mechanical movement""],
+      ""motion_rules"": [""rapid rhythmic cutting""],
+      ""sensory_focus"": [""tactile diversity"", ""functional tech""],
+      ""emotional_intent"": ""quality density""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Sofa in sunlit living room"",
+      ""end_cue"": ""End of slow zoom out"",
+      ""camera_behavior"": [""slow zoom out""],
+      ""subject_rules"": [""decorated interior"", ""scenic views (ocean)""],
+      ""motion_rules"": [""receding camera motion""],
+      ""sensory_focus"": [""aspirational environment"", ""natural lighting""],
+      ""emotional_intent"": ""envy and relaxation""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Sequence of sectional styles"",
+      ""end_cue"": ""Transition to final shot"",
+      ""camera_behavior"": [""static wide with logo overlay""],
+      ""subject_rules"": [""multiple interior styles"", ""changing color palettes""],
+      ""motion_rules"": [""fast environmental cuts""],
+      ""sensory_focus"": [""chromatic range"", ""style versatility""],
+      ""emotional_intent"": ""overwhelming choice""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Final olive sectional shot"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static wide""],
+      ""subject_rules"": [""hero product"", ""brand lockup""],
+      ""motion_rules"": [""static hold with text""],
+      ""sensory_focus"": [""brand recall""],
+      ""emotional_intent"": ""decisive completion""
+    }
+  ]
+}"
+https://www.youtube.com/watch?v=O6fepeV7KC0,"{
+  ""video_id"": ""Make It You - Your Sofa Your Way - Value City Furniture"",
+  ""duration"": 15,
+  ""shots"": [
+    {
+      ""start"": 0,
+      ""end"": 2,
+      ""visual"": ""A bright living room with a white sectional sofa and geometric rug"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""Make it a laid-back look."",
+      ""text"": ""N/A"",
+      ""purpose"": ""mood_establish""
+    },
+    {
+      ""start"": 2,
+      ""end"": 3,
+      ""visual"": ""A moody room with a deep blue sectional and colorful art pieces"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""Or go for a total showstopper."",
+      ""text"": ""N/A"",
+      ""purpose"": ""color_variation""
+    },
+    {
+      ""start"": 3,
+      ""end"": 5,
+      ""visual"": ""A person relaxing on a grey sectional with their dog in a cozy living room"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""Make it you with Designer Looks."",
+      ""text"": ""MAKE IT YOU CUSTOMIZE THE LOOK"",
+      ""purpose"": ""lifestyle_emotion""
+    },
+    {
+      ""start"": 5,
+      ""end"": 7,
+      ""visual"": ""A cream-colored sectional sofa on a white background"",
+      ""camera"": ""static wide"",
+      ""audio"": ""With lots of styles, colors, even pet-friendly fabrics."",
+      ""text"": ""MAKE IT YOU CUSTOMIZE THE LOOK COLLIN"",
+      ""purpose"": ""form_reveal""
+    },
+    {
+      ""start"": 7,
+      ""end"": 8,
+      ""visual"": ""A grid showing various fabric swatches and textures"",
+      ""camera"": ""static grid"",
+      ""audio"": ""N/A"",
+      ""text"": ""35+ Colors & Fabrics Including Performance Fabrics"",
+      ""purpose"": ""material_focus""
+    },
+    {
+      ""start"": 8,
+      ""end"": 10,
+      ""visual"": ""Multiple sofas in different colors moving into frame"",
+      ""camera"": ""dynamic motion graphics"",
+      ""audio"": ""It's your sofa your way."",
+      ""text"": ""Your sofa your way"",
+      ""purpose"": ""color_variation""
+    },
+    {
+      ""start"": 10,
+      ""end"": 12,
+      ""visual"": ""A woman playing guitar on a grey sectional in a modern loft"",
+      ""camera"": ""eye-level wide"",
+      ""audio"": ""Get custom designer furniture without the designer prices."",
+      ""text"": ""Designer furniture without the designer prices."",
+      ""purpose"": ""authority_message""
+    },
+    {
+      ""start"": 12,
+      ""end"": 15,
+      ""visual"": ""Logos for Designer Looks and Value City Furniture on a white background"",
+      ""camera"": ""static"",
+      ""audio"": ""Only at Value City Furniture."",
+      ""text"": ""VALUE CITY FURNITURE designerlooks.com"",
+      ""purpose"": ""brand_close""
+    }
+  ]
+}","{
+  ""video_id"": ""Make It You - Your Sofa Your Way - Value City Furniture"",
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 2 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""material_focus"", ""duration"": 1 },
+    { ""purpose"": ""color_variation"", ""duration"": 2 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""pattern_id"": ""choice-accelerant-15s"",
+  ""duration"": 15,
+  ""acts"": [
+    { ""purpose"": ""mood_establish"", ""duration"": 2 },
+    { ""purpose"": ""color_variation"", ""duration"": 1 },
+    { ""purpose"": ""lifestyle_emotion"", ""duration"": 2 },
+    { ""purpose"": ""form_reveal"", ""duration"": 2 },
+    { ""purpose"": ""material_focus"", ""duration"": 1 },
+    { ""purpose"": ""color_variation"", ""duration"": 2 },
+    { ""purpose"": ""authority_message"", ""duration"": 2 },
+    { ""purpose"": ""brand_close"", ""duration"": 3 }
+  ]
+}","{
+  ""video_id"": ""Make It You - Your Sofa Your Way - Value City Furniture"",
+  ""micro_instances"": [
+    {
+      ""purpose"": ""mood_establish"",
+      ""start_cue"": ""Bright living room with white sectional"",
+      ""end_cue"": ""Transition to deep blue room"",
+      ""camera_behavior"": [""eye-level wide""],
+      ""subject_rules"": [""clean interior design"", ""geometric accessories""],
+      ""motion_rules"": [""static hold""],
+      ""sensory_focus"": [""spatial openness"", ""bright natural light""],
+      ""emotional_intent"": ""calm and inviting""
+    },
+    {
+      ""purpose"": ""color_variation"",
+      ""start_cue"": ""Deep blue sectional in moody room"",
+      ""end_cue"": ""Multiple sofas moving into frame"",
+      ""camera_behavior"": [""eye-level wide"", ""dynamic motion graphics""],
+      ""subject_rules"": [""saturated color palettes"", ""sliding product layers""],
+      ""motion_rules"": [""fast environmental swap"", ""directional sliding""],
+      ""sensory_focus"": [""chromatic contrast"", ""visual variety""],
+      ""emotional_intent"": ""creative empowerment""
+    },
+    {
+      ""purpose"": ""lifestyle_emotion"",
+      ""start_cue"": ""Person and dog on grey sectional"",
+      ""end_cue"": ""End of sofa relaxation"",
+      ""camera_behavior"": [""eye-level wide""],
+      ""subject_rules"": [""human-pet interaction"", ""casual domestic activity""],
+      ""motion_rules"": [""natural subject movement""],
+      ""sensory_focus"": [""softness"", ""durability (pet-friendly)""],
+      ""emotional_intent"": ""relatability and warmth""
+    },
+    {
+      ""purpose"": ""form_reveal"",
+      ""start_cue"": ""Cream sectional on white background"",
+      ""end_cue"": ""End of product silhouette shot"",
+      ""camera_behavior"": [""static wide""],
+      ""subject_rules"": [""isolated product"", ""high-key lighting""],
+      ""motion_rules"": [""static hold""],
+      ""sensory_focus"": [""clean lines"", ""product scale""],
+      ""emotional_intent"": ""design clarity""
+    },
+    {
+      ""purpose"": ""material_focus"",
+      ""start_cue"": ""Grid showing fabric swatches"",
+      ""end_cue"": ""End of swatch graphic"",
+      ""camera_behavior"": [""static grid""],
+      ""subject_rules"": [""textile textures"", ""multi-panel layout""],
+      ""motion_rules"": [""text pop-on overlay""],
+      ""sensory_focus"": [""performance fabric grain"", ""tactile range""],
+      ""emotional_intent"": ""technical assurance""
+    },
+    {
+      ""purpose"": ""authority_message"",
+      ""start_cue"": ""Woman playing guitar in loft"",
+      ""end_cue"": ""End of value proposition text"",
+      ""camera_behavior"": [""eye-level wide""],
+      ""subject_rules"": [""aspirational loft setting"", ""value-based text overlay""],
+      ""motion_rules"": [""minimal subject motion""],
+      ""sensory_focus"": [""luxury aesthetic at retail price""],
+      ""emotional_intent"": ""intellectual satisfaction""
+    },
+    {
+      ""purpose"": ""brand_close"",
+      ""start_cue"": ""Dual logo lockup"",
+      ""end_cue"": ""Video end"",
+      ""camera_behavior"": [""static""],
+      ""subject_rules"": [""brand logos"", ""URL""],
+      ""motion_rules"": [""static hold""],
+      ""sensory_focus"": [""brand recall""],
+      ""emotional_intent"": ""finality""
+    }
+  ]
+}"

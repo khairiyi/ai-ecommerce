@@ -1,0 +1,195 @@
+{
+    "mood_establish": [
+      {
+        "pattern_id": "ambient_scene_entry",
+        "camera_behavior": ["static wide", "slow tracking", "eye-level framing"],
+        "subject_rules": ["environment introduced before product emphasis", "human presence establishes scale"],
+        "motion_rules": ["natural human movement", "minimal camera motion"],
+        "sensory_focus": ["lighting mood", "spatial openness"],
+        "emotional_intent": "invitation and atmosphere"
+      },
+      {
+        "pattern_id": "dramatic_tension_open",
+        "camera_behavior": ["static medium-wide", "close-up accents"],
+        "subject_rules": ["controlled composition", "intentional stillness or contrast"],
+        "motion_rules": ["minimal movement punctuated by sudden action"],
+        "sensory_focus": ["sound contrast", "shadow and texture"],
+        "emotional_intent": "intrigue and disruption"
+      },
+      {
+        "pattern_id": "brand_signal_intro",
+        "camera_behavior": ["static graphic"],
+        "subject_rules": ["logo or typography on neutral background"],
+        "motion_rules": ["instant pop-on or short hold"],
+        "sensory_focus": ["clarity", "audio sync"],
+        "emotional_intent": "brand awareness"
+      }
+    ],
+    "material_focus": [
+      {
+        "pattern_id": "tactile_macro_sweep",
+        "camera_behavior": ["macro close-up", "slow sliding macro"],
+        "subject_rules": ["surface textures only", "no full product view"],
+        "motion_rules": ["linear glide", "low velocity"],
+        "sensory_focus": ["texture grain", "material sheen"],
+        "emotional_intent": "quality reassurance"
+      },
+      {
+        "pattern_id": "industrial_material_process",
+        "camera_behavior": ["extreme close-up", "top-down", "wide industrial shot"],
+        "subject_rules": ["raw materials", "tools or machinery"],
+        "motion_rules": ["mechanical repetition", "precise gestures"],
+        "sensory_focus": ["sound of craft", "material transformation"],
+        "emotional_intent": "authentic craftsmanship"
+      },
+      {
+        "pattern_id": "material_comparison_display",
+        "camera_behavior": ["static wide", "grid layout"],
+        "subject_rules": ["multiple material options presented simultaneously"],
+        "motion_rules": ["graphic pop-ons", "quick cuts"],
+        "sensory_focus": ["tactile variety", "finish differences"],
+        "emotional_intent": "technical confidence"
+      }
+    ],
+    "color_variation": [
+      {
+        "pattern_id": "rapid_color_swaps",
+        "camera_behavior": ["static wide", "eye-level framing"],
+        "subject_rules": ["fixed composition", "product color changes"],
+        "motion_rules": ["rhythmic jump cuts"],
+        "sensory_focus": ["chromatic range"],
+        "emotional_intent": "excitement through choice"
+      },
+      {
+        "pattern_id": "playful_color_motion",
+        "camera_behavior": ["wide tracking", "static medium"],
+        "subject_rules": ["multiple SKUs", "animated or rotating objects"],
+        "motion_rules": ["stop-motion", "spinning or bouncing"],
+        "sensory_focus": ["bold palettes", "visual energy"],
+        "emotional_intent": "creative playfulness"
+      },
+      {
+        "pattern_id": "swatch_interaction",
+        "camera_behavior": ["macro", "top-down"],
+        "subject_rules": ["fabric swatches or samples", "human hand"],
+        "motion_rules": ["flipping", "presenting"],
+        "sensory_focus": ["color contrast", "material feel"],
+        "emotional_intent": "empowered selection"
+      }
+    ],
+    "form_reveal": [
+      {
+        "pattern_id": "isolated_silhouette",
+        "camera_behavior": ["static wide", "eye-level"],
+        "subject_rules": ["single product", "neutral background"],
+        "motion_rules": ["static hold", "lighting transition"],
+        "sensory_focus": ["shape clarity", "scale"],
+        "emotional_intent": "design appreciation"
+      },
+      {
+        "pattern_id": "functional_transformation",
+        "camera_behavior": ["static wide"],
+        "subject_rules": ["transforming furniture", "no human obstruction"],
+        "motion_rules": ["mechanical unfolding or reconfiguration"],
+        "sensory_focus": ["geometry change", "utility"],
+        "emotional_intent": "functional wonder"
+      },
+      {
+        "pattern_id": "guided_discovery",
+        "camera_behavior": ["tracking wide", "overhead"],
+        "subject_rules": ["human explores product in space"],
+        "motion_rules": ["subject-led movement"],
+        "sensory_focus": ["spatial footprint", "ergonomics"],
+        "emotional_intent": "curiosity and discovery"
+      }
+    ],
+    "lifestyle_emotion": [
+      {
+        "pattern_id": "comfort_release",
+        "camera_behavior": ["eye-level medium", "slow zoom"],
+        "subject_rules": ["human reclining or resting"],
+        "motion_rules": ["slow-motion impact", "relaxed movement"],
+        "sensory_focus": ["softness", "ease"],
+        "emotional_intent": "relief and satisfaction"
+      },
+      {
+        "pattern_id": "domestic_harmony",
+        "camera_behavior": ["static medium-wide"],
+        "subject_rules": ["shared domestic activity", "spacious composition"],
+        "motion_rules": ["natural interaction"],
+        "sensory_focus": ["warm light", "comfort"],
+        "emotional_intent": "belonging and calm"
+      },
+      {
+        "pattern_id": "expressive_play",
+        "camera_behavior": ["medium shot", "wide shot"],
+        "subject_rules": ["playful human movement", "personality-driven action"],
+        "motion_rules": ["beat-synced motion"],
+        "sensory_focus": ["energy", "joy"],
+        "emotional_intent": "youthful delight"
+      }
+    ],
+    "authority_message": [
+      {
+        "pattern_id": "expert_presence",
+        "camera_behavior": ["static medium", "eye-level"],
+        "subject_rules": ["professional figure or skilled labor"],
+        "motion_rules": ["minimal movement", "direct engagement"],
+        "sensory_focus": ["clarity", "credibility"],
+        "emotional_intent": "trust"
+      },
+      {
+        "pattern_id": "process_proof",
+        "camera_behavior": ["industrial wide", "macro detail"],
+        "subject_rules": ["manufacturing steps", "tools in use"],
+        "motion_rules": ["mechanical precision"],
+        "sensory_focus": ["process transparency"],
+        "emotional_intent": "intellectual assurance"
+      },
+      {
+        "pattern_id": "informational_overlay",
+        "camera_behavior": ["static wide", "graphic"],
+        "subject_rules": ["text overlays with logistical or value info"],
+        "motion_rules": ["fade or pop"],
+        "sensory_focus": ["readability"],
+        "emotional_intent": "reliability"
+      }
+    ],
+    "brand_close": [
+      {
+        "pattern_id": "hero_lockup",
+        "camera_behavior": ["static wide"],
+        "subject_rules": ["final product hero with logo"],
+        "motion_rules": ["logo animation or hold"],
+        "sensory_focus": ["brand recall"],
+        "emotional_intent": "decisive resolution"
+      },
+      {
+        "pattern_id": "lifestyle_resolution",
+        "camera_behavior": ["wide montage"],
+        "subject_rules": ["finished interiors", "fulfilled usage"],
+        "motion_rules": ["scene montage or fade"],
+        "sensory_focus": ["warmth", "completeness"],
+        "emotional_intent": "contentment"
+      },
+      {
+        "pattern_id": "graphic_signoff",
+        "camera_behavior": ["static graphic"],
+        "subject_rules": ["logo, tagline, URL"],
+        "motion_rules": ["static hold"],
+        "sensory_focus": ["clarity of offer"],
+        "emotional_intent": "confidence"
+      }
+    ],
+    "cta": [
+      {
+        "pattern_id": "direct_action_prompt",
+        "camera_behavior": ["static wide hero"],
+        "subject_rules": ["product with actionable text"],
+        "motion_rules": ["logo sting or text animation"],
+        "sensory_focus": ["call-to-action clarity"],
+        "emotional_intent": "motivation to act"
+      }
+    ]
+  }
+  
