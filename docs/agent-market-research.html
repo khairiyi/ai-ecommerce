@@ -70,6 +70,9 @@
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
     }
     .nav-links a:hover {
       color: var(--success);
@@ -81,15 +84,18 @@
     .nav-dropdown {
       position: relative;
       padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 0.25rem;
+      white-space: nowrap;
     }
     .nav-dropdown-toggle:hover {
       color: var(--accent);

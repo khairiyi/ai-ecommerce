@@ -143,6 +143,9 @@
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+      height: 100%;
     }
     .nav-links a:hover {
       color: var(--accent);
@@ -154,15 +157,18 @@
     .nav-dropdown {
       position: relative;
       padding-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
       cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       gap: 0.25rem;
+      white-space: nowrap;
     }
     .nav-dropdown-toggle:hover {
       color: var(--accent);
@@ -228,8 +234,8 @@
     </div>
   </nav>
   <div class="container">
-    <h1>Platform Architecture</h1>
-    <p class="subtitle">How our intelligent agents work together to automate your U.S. market entry</p>
+    <h1>How It Works</h1>
+    <p class="subtitle">A unified system of intelligent agents that automate your entire U.S. market entry workflow</p>
 
     <div class="diagram-wrap">
       <h2>High-level flow</h2>
