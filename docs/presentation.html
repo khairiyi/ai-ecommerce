@@ -301,18 +301,19 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: 100%;
+      top: calc(100% + 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 0.5rem;
-      margin-top: 0.5rem;
       min-width: 200px;
       display: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu {
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown-menu:hover {
       display: block;
     }
     .nav-dropdown-menu a {
@@ -412,152 +413,89 @@
 
       <!-- Core agents -->
       <section class="section">
-        <h2 class="section-title">Core agents — what the system does for you</h2>
-        <p style="margin-bottom: 1.5rem;">Six agents that handle industry knowledge, creatives, distribution, engagement, analytics, and store listings.</p>
+        <h2 class="section-title">Core capabilities</h2>
+        <p style="margin-bottom: 1.5rem;">Six intelligent agents work together to automate your entire U.S. market entry workflow—from research to sales.</p>
         <div class="agent-grid">
           <div class="agent-card core">
-            <h4>Industry knowledge</h4>
-            <ul>
-              <li>Best-practice library by industry (e.g. home goods, apparel, beauty)</li>
-              <li>U.S. compliance (FTC, platform policies, do/don’t by vertical)</li>
-              <li>Stable output for other agents; optional real-time trends & recommendations</li>
-              <li>Daily newsletter: platform rules, regulations, trends, competitor updates</li>
-              <li>Quick research for new customers: web search & knowledge base creation</li>
-              <li>Customer-specific knowledge storage for personalized recommendations</li>
-            </ul>
+            <h4><a href="agent-industry-knowledge.html" style="color: inherit; text-decoration: none;">Industry Knowledge</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Automated research and compliance intelligence. Daily newsletters with platform updates, regulations, and competitor insights.</p>
           </div>
           <div class="agent-card core">
-            <h4>Image-to-video</h4>
-            <ul>
-              <li>Commercial and UGC-style videos from your assets</li>
-              <li>Industry knowledge integration: daily updates from Industry Knowledge Agent</li>
-              <li>Video prompt template library: product showcase, influencer style, commercials</li>
-              <li>Prompt engineering updates for each video LLM (Runway, Pika, etc.)</li>
-              <li>Input sources: industry knowledge, video requirements, product photos</li>
-              <li>Brand guidelines (logo, colors, style); pre-publish checks</li>
-              <li>Emotion tuning; learns from performance; generation caps per campaign</li>
-            </ul>
+            <h4><a href="agent-image-to-video.html" style="color: inherit; text-decoration: none;">Image-to-Video</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Transform product photos into engaging social media videos. Commercial and UGC styles with brand compliance.</p>
           </div>
           <div class="agent-card core">
-            <h4>Media management</h4>
-            <ul>
-              <li>Create and manage scheduling of creatives generation</li>
-              <li>Automated upload to social platforms with pre-determined schedules</li>
-              <li>Schedule and publish creatives to Meta, TikTok, then more</li>
-              <li>Per-platform sizing; content calendar; failed-job handling</li>
-              <li>A/B testing and optimization from engagement data</li>
-            </ul>
+            <h4><a href="agent-media-management.html" style="color: inherit; text-decoration: none;">Media Management</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Automated scheduling and publishing across Meta, TikTok, and more. A/B testing and performance optimization.</p>
           </div>
           <div class="agent-card core">
-            <h4>Customer engagement</h4>
-            <ul>
-              <li>Social media response: reply to comments and messages</li>
-              <li>Lead consolidation: consolidate sales leads back to brand owner</li>
-              <li>Draft replies for approval; tone and escalation rules</li>
-              <li>FAQ generator; sentiment and urgency detection</li>
-            </ul>
+            <h4><a href="agent-customer-engagement.html" style="color: inherit; text-decoration: none;">Customer Engagement</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">AI-powered social media responses and lead consolidation. Sentiment analysis and automated FAQ generation.</p>
           </div>
           <div class="agent-card core">
-            <h4>Analytics</h4>
-            <ul>
-              <li>Live dashboard: generate and update live dashboard for stakeholders</li>
-              <li>Key metrics tracking: ad spending, top performing videos</li>
-              <li>Alert system: GMV drops, conversion rate changes, inventory, CTR alerts</li>
-              <li>Insights, product recommendations, and feedback dashboards</li>
-              <li>Data from platforms and stores; scheduled refresh and alerts</li>
-              <li>Predictive analytics and A/B test suggestions</li>
-            </ul>
+            <h4><a href="agent-analytics.html" style="color: inherit; text-decoration: none;">Analytics</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Live dashboards with predictive insights. Automated alerts for GMV, conversion rates, and inventory changes.</p>
           </div>
           <div class="agent-card core">
-            <h4>Store / listing management</h4>
-            <ul>
-              <li>One catalog → Amazon, Shopify, and more</li>
-              <li>Compliance and SEO; price/stock sync; first listing approval</li>
-              <li>Market-specific and competitor insights</li>
-            </ul>
+            <h4><a href="agent-store-listing.html" style="color: inherit; text-decoration: none;">Store/Listing Management</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">One catalog syncs to Amazon, Shopify, and more. Compliance-checked listings with SEO optimization.</p>
           </div>
         </div>
+        <p style="text-align: center; margin-top: 1.5rem;"><a href="architecture-diagram.html" style="color: var(--accent); text-decoration: none; font-weight: 600;">View architecture diagram →</a></p>
       </section>
 
       <!-- Extended agents -->
       <section class="section">
-        <h2 class="section-title">Extended agents</h2>
-        <p style="margin-bottom: 1rem;">Additional capabilities as you scale: market research, branding strategy, localization, and legal compliance.</p>
+        <h2 class="section-title">Extended capabilities</h2>
+        <p style="margin-bottom: 1rem;">Additional intelligent agents available as you scale: market research, branding strategy, localization, and legal compliance.</p>
         <div class="agent-grid">
           <div class="agent-card extended">
-            <h4>Market research</h4>
-            <ul>
-              <li>U.S. niche research; social listening and trends</li>
-              <li>High-potential target markets per brand</li>
-            </ul>
+            <h4><a href="agent-market-research.html" style="color: inherit; text-decoration: none;">Market Research</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Identify high-potential U.S. market niches through consumer surveys and trend analysis.</p>
           </div>
           <div class="agent-card extended">
-            <h4>Branding strategy</h4>
-            <ul>
-              <li>Create branding and strategy plan for brand/product</li>
-              <li>Input processing: brand info, industry knowledge, competitors</li>
-              <li>Social media plan based on goals (long-term positioning or short-term)</li>
-              <li>Long-term strategy from performance and feedback</li>
-              <li>Positioning, value proposition, messaging</li>
-              <li>Goal-based planning: support long-term and short-term goals</li>
-            </ul>
+            <h4><a href="agent-branding-strategy.html" style="color: inherit; text-decoration: none;">Branding Strategy</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Comprehensive branding plans with social media strategy aligned to your goals.</p>
           </div>
           <div class="agent-card extended">
-            <h4>Localization</h4>
-            <ul>
-              <li>U.S. vernacular, cultural nuances, packaging</li>
-              <li>Learns from customer interactions over time</li>
-            </ul>
+            <h4><a href="agent-localization.html" style="color: inherit; text-decoration: none;">Localization</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Adapt products for U.S. markets with language, cultural nuances, and packaging optimization.</p>
           </div>
           <div class="agent-card extended">
-            <h4>Legal compliance</h4>
-            <ul>
-              <li>U.S. ad regulations (e.g. FTC)</li>
-              <li>Single compliance check before publish</li>
-            </ul>
+            <h4><a href="agent-legal-compliance.html" style="color: inherit; text-decoration: none;">Legal Compliance</a></h4>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin: 0;">Automated compliance checking against U.S. regulations and platform policies.</p>
           </div>
         </div>
       </section>
 
       <!-- Business Customer User Journey -->
       <section class="section">
-        <h2 class="section-title">Business customer user journey</h2>
-        <p style="margin-bottom: 1.5rem;">Step-by-step process for onboarding new business customers and how each agent contributes to their success.</p>
+        <h2 class="section-title">How it works</h2>
+        <p style="margin-bottom: 1.5rem;">A streamlined 5-step onboarding process gets you from product information to live campaigns in days, not months.</p>
         
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="margin-top: 0;"><span class="num">1</span> Collect product information</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Industry Knowledge Agent</strong> stores customer requirements, performs web search, parses website information, and creates initial industry knowledge base.</p>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">We gather your product details, goals, and requirements. Our <strong style="color: var(--accent);">Industry Knowledge Agent</strong> automatically researches your market and builds your knowledge base.</p>
         </div>
 
         <div class="card" style="margin-bottom: 1rem;">
           <h3 style="margin-top: 0;"><span class="num">2</span> Define goals</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Branding & Strategy Agent</strong> inputs brand information, searches industry knowledge and competitors, and creates a social media plan based on goals.</p>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">Tell us your objectives—brand positioning or immediate conversions. Our <strong style="color: var(--accent);">Branding & Strategy Agent</strong> creates a customized social media plan.</p>
         </div>
 
         <div class="card" style="margin-bottom: 1rem;">
-          <h3 style="margin-top: 0;"><span class="num">3</span> Create initial videos</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Image-to-Video Agent</strong> collects information from Industry Knowledge Agent daily and creates videos from product photos.</p>
+          <h3 style="margin-top: 0;"><span class="num">3</span> Create videos</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">Upload product photos. Our <strong style="color: var(--accent);">Image-to-Video Agent</strong> generates engaging videos optimized for your target audience.</p>
         </div>
 
         <div class="card" style="margin-bottom: 1rem;">
-          <h3 style="margin-top: 0;"><span class="num">4</span> Schedule and upload</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Media Management Agent</strong> executes scheduled uploads based on the plan from Branding & Strategy Agent.</p>
-        </div>
-
-        <div class="card" style="margin-bottom: 1rem;">
-          <h3 style="margin-top: 0;"><span class="num">5</span> Show centralized data</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Analytics Agent</strong> generates live dashboard, provides insights and recommendations, and alerts on key metrics changes.</p>
+          <h3 style="margin-top: 0;"><span class="num">4</span> Publish & engage</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">Content goes live automatically across platforms. Our <strong style="color: var(--accent);">Media Management</strong> and <strong style="color: var(--accent);">Customer Engagement Agents</strong> handle distribution and responses.</p>
         </div>
 
         <div class="card">
-          <h3 style="margin-top: 0;">Continuous engagement</h3>
-          <p style="margin: 0.5rem 0; color: var(--text-muted);">After initial setup, agents work continuously:</p>
-          <ul style="margin-top: 0.5rem;">
-            <li><strong style="color: var(--accent);">Industry Knowledge Agent:</strong> Daily updates and newsletter distribution</li>
-            <li><strong style="color: var(--accent);">Customer Engagement Agent:</strong> Real-time response to comments and messages, lead consolidation</li>
-            <li><strong style="color: var(--accent);">Analytics Agent:</strong> Continuous monitoring and alerting</li>
-            <li><strong style="color: var(--accent);">Image-to-Video Agent:</strong> Regular video generation based on performance and trends</li>
-          </ul>
+          <h3 style="margin-top: 0;"><span class="num">5</span> Monitor & optimize</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">Our <strong style="color: var(--accent);">Analytics Agent</strong> provides live dashboards and alerts. All agents continuously learn and optimize based on performance data.</p>
         </div>
       </section>
 
@@ -571,41 +509,9 @@
         </div>
       </section>
 
-      <!-- Roadmap -->
-      <section class="section">
-        <h2 class="section-title">Roadmap</h2>
-        <div class="roadmap">
-          <div class="roadmap-item">
-            <span class="roadmap-phase">Phase 1 (MVP)</span>
-            <span class="roadmap-desc">Orchestration and context; 1–2 industries; core agents for 1–2 platforms; one catalog and store; analytics and engagement (draft replies); auth and usage tracking.</span>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-phase">Phase 2</span>
-            <span class="roadmap-desc">More platforms and industries; A/B testing and predictive analytics; optional market research and localization; full auto-publish where safe.</span>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-phase">Phase 3</span>
-            <span class="roadmap-desc">Branding strategy, legal compliance module, competitor monitoring, more marketplaces, real-time dashboard where needed.</span>
-          </div>
-          <div class="roadmap-item">
-            <span class="roadmap-phase">Ongoing</span>
-            <span class="roadmap-desc">U.S. beta testing, user feedback, scalability and cost control (e.g. video caps).</span>
-          </div>
-        </div>
-      </section>
+      
 
-      <!-- User experience -->
-      <section class="section">
-        <h2 class="section-title">User experience</h2>
-        <div class="table-wrap">
-          <table>
-            <tr><th>UI/UX</th><td>Simple dashboards and actionable tasks for non-technical users.</td></tr>
-            <tr><th>Onboarding</th><td>Guided tour so you can start quickly.</td></tr>
-            <tr><th>Support</th><td>AI-driven support (e.g. chatbot) to get the most from the tool.</td></tr>
-            <tr><th>Updates</th><td>Ongoing updates to models and knowledge from market and user feedback.</td></tr>
-          </table>
-        </div>
-      </section>
+      
 
       <footer class="footer">
         <p>AI Ecommerce Platform — Plan v1.0 · Built for manufacturers and brand owners targeting the U.S. market.</p>

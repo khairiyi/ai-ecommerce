@@ -95,19 +95,30 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: 100%;
+      top: calc(100% + 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-sm);
       padding: 0.5rem;
-      margin-top: 0.5rem;
       min-width: 200px;
       display: none;
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu {
-      display: block;
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown-menu:hover {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem;
+      min-width: 200px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
     .nav-dropdown-menu a {
       display: block;

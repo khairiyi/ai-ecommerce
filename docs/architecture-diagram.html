@@ -6,24 +6,24 @@
   <title>AI Ecommerce Platform – Architecture</title>
   <script type="module">
     import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-    mermaid.initialize({
+      mermaid.initialize({
       startOnLoad: true,
-      theme: 'base',
+      theme: 'dark',
       themeVariables: {
-        primaryColor: '#e8f4f8',
-        primaryTextColor: '#1a1a1a',
-        primaryBorderColor: '#2d7ab8',
+        primaryColor: '#1a2332',
+        primaryTextColor: '#e6edf3',
+        primaryBorderColor: '#3b82f6',
         lineColor: '#4a90b8',
-        secondaryColor: '#f0f7fc',
-            tertiaryColor: '#fafafa',
-        background: '#ffffff',
-        mainBkg: '#e8f4f8',
-        nodeBorder: '#2d7ab8',
-        clusterBkg: '#f5f9fc',
-        clusterBorder: '#4a90b8',
-        titleColor: '#1a1a1a',
-        edgeLabelBackground: '#fff',
-        fontFamily: 'system-ui, -apple-system, sans-serif',
+        secondaryColor: '#243044',
+        tertiaryColor: '#1a2332',
+        background: '#0f1419',
+        mainBkg: '#1a2332',
+        nodeBorder: '#3b82f6',
+        clusterBkg: '#243044',
+        clusterBorder: '#3b82f6',
+        titleColor: '#e6edf3',
+        edgeLabelBackground: '#1a2332',
+        fontFamily: 'Plus Jakarta Sans, system-ui, -apple-system, sans-serif',
         fontSize: '16px'
       },
       flowchart: {
@@ -34,34 +34,53 @@
       }
     });
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface2: #243044;
+      --text: #e6edf3;
+      --text-muted: #8b9cb3;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --success: #22c55e;
+      --border: #2d3a4d;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       margin: 0;
-      padding: 2rem;
-      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
-      background: #f8fafc;
-      color: #1a1a1a;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
       min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
     }
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 2rem 24px;
     }
     h1 {
       font-size: 1.75rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
+      color: var(--text);
     }
     .subtitle {
-      color: #64748b;
+      color: var(--text-muted);
       margin-bottom: 2rem;
     }
     .diagram-wrap {
-      background: #fff;
-      border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
       padding: 2rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,.08);
       margin-bottom: 2rem;
       overflow: auto;
     }
@@ -69,7 +88,7 @@
       font-size: 1.1rem;
       font-weight: 600;
       margin: 0 0 1rem 0;
-      color: #334155;
+      color: var(--text);
     }
     .mermaid {
       display: flex;
@@ -79,25 +98,28 @@
     .legend {
       margin-top: 2rem;
       padding: 1rem 1.25rem;
-      background: #f1f5f9;
-      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
       font-size: 0.9rem;
-      color: #475569;
+      color: var(--text-muted);
     }
-    .legend strong { color: #1e293b; }
+    .legend strong { color: var(--text); }
     /* Navigation */
     .nav {
-      background: #f1f5f9;
-      border-bottom: 1px solid #cbd5e1;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
       padding: 1rem 0;
       position: sticky;
       top: 0;
       z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(26, 35, 50, 0.9);
     }
     .nav-container {
       max-width: 1200px;
       margin: 0 auto;
-      padding: 0 2rem;
+      padding: 0 24px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -107,7 +129,7 @@
     .nav-logo {
       font-weight: 700;
       font-size: 1.1rem;
-      color: #1a1a1a;
+      color: var(--text);
       text-decoration: none;
     }
     .nav-links {
@@ -117,23 +139,23 @@
       align-items: center;
     }
     .nav-links a {
-      color: #475569;
+      color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
       transition: color 0.2s;
     }
     .nav-links a:hover {
-      color: #2d7ab8;
+      color: var(--accent);
     }
     .nav-links .active {
-      color: #2d7ab8;
+      color: var(--accent);
       font-weight: 600;
     }
     .nav-dropdown {
       position: relative;
     }
     .nav-dropdown-toggle {
-      color: #475569;
+      color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
       cursor: pointer;
@@ -142,35 +164,36 @@
       gap: 0.25rem;
     }
     .nav-dropdown-toggle:hover {
-      color: #2d7ab8;
+      color: var(--accent);
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: 100%;
+      top: calc(100% + 0.5rem);
       right: 0;
-      background: #fff;
-      border: 1px solid #cbd5e1;
-      border-radius: 8px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
       padding: 0.5rem;
-      margin-top: 0.5rem;
       min-width: 200px;
       display: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu {
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown-menu:hover {
       display: block;
     }
     .nav-dropdown-menu a {
       display: block;
       padding: 0.5rem 0.75rem;
-      color: #475569;
+      color: var(--text-muted);
       text-decoration: none;
       font-size: 0.9rem;
       border-radius: 4px;
     }
     .nav-dropdown-menu a:hover {
-      background: #f1f5f9;
-      color: #2d7ab8;
+      background: var(--surface2);
+      color: var(--accent);
     }
   </style>
 </head>
