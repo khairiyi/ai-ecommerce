@@ -74,6 +74,7 @@
     }
     .nav-dropdown {
       position: relative;
+      padding-bottom: 0.5rem;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
@@ -89,7 +90,7 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: calc(100% + 0.5rem);
+      top: calc(100% - 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -100,8 +101,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown-menu:hover {
+    .nav-dropdown:hover .nav-dropdown-menu {
       position: absolute;
       top: calc(100% + 0.5rem);
       right: 0;
@@ -239,7 +239,7 @@
   <header class="hero">
     <div class="container">
       <h1>Customer Engagement Agent</h1>
-      <p class="tagline">Automate social media responses, consolidate sales leads, and maintain consistent brand communication across all customer touchpoints.</p>
+      <p class="tagline">AI-powered social media responses that convert conversations into sales leads while maintaining your brand voice.</p>
       <span class="badge">Core Agent</span>
     </div>
   </header>

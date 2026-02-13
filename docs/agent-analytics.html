@@ -80,6 +80,7 @@
     }
     .nav-dropdown {
       position: relative;
+      padding-bottom: 0.5rem;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
@@ -95,7 +96,7 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: calc(100% + 0.5rem);
+      top: calc(100% - 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -106,8 +107,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown-menu:hover {
+    .nav-dropdown:hover .nav-dropdown-menu {
       position: absolute;
       top: calc(100% + 0.5rem);
       right: 0;
@@ -253,7 +253,7 @@
   <header class="hero">
     <div class="container">
       <h1>Analytics Agent</h1>
-      <p class="tagline">Transform data into actionable insights with live dashboards, predictive analytics, and intelligent alerting.</p>
+      <p class="tagline">Real-time insights and predictive analytics to optimize your marketing spend and maximize ROI.</p>
       <span class="badge">Core Agent</span>
     </div>
   </header>

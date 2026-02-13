@@ -80,6 +80,7 @@
     }
     .nav-dropdown {
       position: relative;
+      padding-bottom: 0.5rem;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
@@ -95,7 +96,7 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: calc(100% + 0.5rem);
+      top: calc(100% - 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -106,8 +107,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown-menu:hover {
+    .nav-dropdown:hover .nav-dropdown-menu {
       position: absolute;
       top: calc(100% + 0.5rem);
       right: 0;
@@ -253,7 +253,7 @@
   <header class="hero">
     <div class="container">
       <h1>Market Research Agent</h1>
-      <p class="tagline">Identify high-potential U.S. market niches through consumer surveys, social listening, and comprehensive trend analysis.</p>
+      <p class="tagline">Discover untapped U.S. market opportunities through AI-powered consumer insights and trend analysis.</p>
       <span class="badge">Extended Agent</span>
     </div>
   </header>

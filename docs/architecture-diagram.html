@@ -153,6 +153,7 @@
     }
     .nav-dropdown {
       position: relative;
+      padding-bottom: 0.5rem;
     }
     .nav-dropdown-toggle {
       color: var(--text-muted);
@@ -168,7 +169,7 @@
     }
     .nav-dropdown-menu {
       position: absolute;
-      top: calc(100% + 0.5rem);
+      top: calc(100% - 0.5rem);
       right: 0;
       background: var(--surface);
       border: 1px solid var(--border);
@@ -179,8 +180,7 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.3);
       z-index: 1000;
     }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown-menu:hover {
+    .nav-dropdown:hover .nav-dropdown-menu {
       display: block;
     }
     .nav-dropdown-menu a {
@@ -228,8 +228,8 @@
     </div>
   </nav>
   <div class="container">
-    <h1>AI Ecommerce Platform – Architecture</h1>
-    <p class="subtitle">Product/brand context, orchestration layer, and agents</p>
+    <h1>Platform Architecture</h1>
+    <p class="subtitle">How our intelligent agents work together to automate your U.S. market entry</p>
 
     <div class="diagram-wrap">
       <h2>High-level flow</h2>
