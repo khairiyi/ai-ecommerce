@@ -237,9 +237,128 @@
       color: var(--text-muted);
       font-size: 0.9rem;
     }
+
+    /* Navigation */
+    .nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(26, 35, 50, 0.9);
+    }
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    .nav-links .active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-dropdown {
+      position: relative;
+    }
+    .nav-dropdown-toggle {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .nav-dropdown-toggle:hover {
+      color: var(--accent);
+    }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      min-width: 200px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 4px;
+    }
+    .nav-dropdown-menu a:hover {
+      background: var(--surface2);
+      color: var(--accent);
+    }
   </style>
 </head>
 <body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="presentation.html" class="nav-logo">AI Ecommerce Platform</a>
+      <div class="nav-links">
+        <a href="presentation.html" class="active">Overview</a>
+        <a href="architecture-diagram.html">Architecture</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Core Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-industry-knowledge.html">Industry Knowledge</a>
+            <a href="agent-image-to-video.html">Image-to-Video</a>
+            <a href="agent-media-management.html">Media Management</a>
+            <a href="agent-customer-engagement.html">Customer Engagement</a>
+            <a href="agent-analytics.html">Analytics</a>
+            <a href="agent-store-listing.html">Store/Listing Management</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Extended Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-market-research.html">Market Research</a>
+            <a href="agent-branding-strategy.html">Branding Strategy</a>
+            <a href="agent-localization.html">Localization</a>
+            <a href="agent-legal-compliance.html">Legal Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
   <header class="hero">
     <div class="container">
       <h1>AI Ecommerce Platform</h1>

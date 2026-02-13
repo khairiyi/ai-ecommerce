@@ -85,9 +85,125 @@
       color: #475569;
     }
     .legend strong { color: #1e293b; }
+    /* Navigation */
+    .nav {
+      background: #f1f5f9;
+      border-bottom: 1px solid #cbd5e1;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1a1a1a;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    .nav-links a {
+      color: #475569;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #2d7ab8;
+    }
+    .nav-links .active {
+      color: #2d7ab8;
+      font-weight: 600;
+    }
+    .nav-dropdown {
+      position: relative;
+    }
+    .nav-dropdown-toggle {
+      color: #475569;
+      text-decoration: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+    .nav-dropdown-toggle:hover {
+      color: #2d7ab8;
+    }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background: #fff;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 0.5rem;
+      margin-top: 0.5rem;
+      min-width: 200px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: #475569;
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 4px;
+    }
+    .nav-dropdown-menu a:hover {
+      background: #f1f5f9;
+      color: #2d7ab8;
+    }
   </style>
 </head>
 <body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="presentation.html" class="nav-logo">AI Ecommerce Platform</a>
+      <div class="nav-links">
+        <a href="presentation.html">Overview</a>
+        <a href="architecture-diagram.html" class="active">Architecture</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Core Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-industry-knowledge.html">Industry Knowledge</a>
+            <a href="agent-image-to-video.html">Image-to-Video</a>
+            <a href="agent-media-management.html">Media Management</a>
+            <a href="agent-customer-engagement.html">Customer Engagement</a>
+            <a href="agent-analytics.html">Analytics</a>
+            <a href="agent-store-listing.html">Store/Listing Management</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Extended Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-market-research.html">Market Research</a>
+            <a href="agent-branding-strategy.html">Branding Strategy</a>
+            <a href="agent-localization.html">Localization</a>
+            <a href="agent-legal-compliance.html">Legal Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
   <div class="container">
     <h1>AI Ecommerce Platform – Architecture</h1>
     <p class="subtitle">Product/brand context, orchestration layer, and agents</p>
