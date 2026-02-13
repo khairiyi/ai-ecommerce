@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Ecommerce Platform — Reach the U.S. Market with Confidence</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface2: #243044;
+      --text: #e6edf3;
+      --text-muted: #8b9cb3;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --success: #22c55e;
+      --border: #2d3a4d;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .page { padding: 3rem 0 4rem; }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 4rem 0 5rem;
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff 0%, var(--text-muted) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero .tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero .value {
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Section */
+    .section { margin-bottom: 3.5rem; }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    .section p { color: var(--text-muted); margin-bottom: 1rem; }
+    .section ul { color: var(--text-muted); padding-left: 1.25rem; margin-bottom: 1rem; }
+    .section li { margin-bottom: 0.35rem; }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card h3 .num {
+      width: 28px;
+      height: 28px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border-radius: var(--radius-sm);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+    }
+    .card ul { list-style: none; padding-left: 0; margin: 0; }
+    .card li {
+      padding: 0.4rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.75em;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+
+    /* Two-column grid for agents */
+    .agent-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+    .agent-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .agent-card:hover { border-color: var(--accent); }
+    .agent-card.core { border-left: 3px solid var(--accent); }
+    .agent-card.extended { border-left: 3px solid var(--success); }
+    .agent-card h4 { font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem; color: var(--text); }
+    .agent-card ul { list-style: none; padding: 0; margin: 0; }
+    .agent-card li {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      padding: 0.3rem 0;
+      padding-left: 1rem;
+      position: relative;
+    }
+    .agent-card li::before { content: '·'; position: absolute; left: 0; color: var(--accent); font-weight: bold; }
+
+    /* Architecture diagram */
+    .arch {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin: 1.5rem 0;
+      overflow-x: auto;
+    }
+    .arch-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      min-width: min-content;
+    }
+    .arch-box {
+      padding: 1rem 1.25rem;
+      border-radius: var(--radius-sm);
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    .arch-box.context { background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(59,130,246,0.3); }
+    .arch-box.orchestration { background: rgba(34, 197, 94, 0.12); color: var(--success); border: 1px solid rgba(34,197,94,0.3); }
+    .arch-box.agents { background: var(--surface2); color: var(--text-muted); border: 1px solid var(--border); }
+    .arch-arrow { color: var(--text-muted); font-size: 1.25rem; }
+    .arch-caption { font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem; text-align: center; }
+
+    /* Tables */
+    .table-wrap { overflow-x: auto; margin: 1rem 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+    th, td { padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+    th { color: var(--text-muted); font-weight: 500; }
+    td { color: var(--text); }
+    tr:last-child td { border-bottom: 0; }
+
+    /* Pillars / highlights */
+    .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+    .pillar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .pillar strong { color: var(--accent); font-size: 0.9rem; display: block; margin-bottom: 0.35rem; }
+    .pillar span { color: var(--text-muted); font-size: 0.9rem; }
+
+    /* Roadmap */
+    .roadmap { margin: 1.5rem 0; }
+    .roadmap-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .roadmap-item:last-child { border-bottom: 0; margin-bottom: 0; padding-bottom: 0; }
+    .roadmap-phase {
+      flex-shrink: 0;
+      width: 100px;
+      font-weight: 700;
+      color: var(--accent);
+      font-size: 0.95rem;
+    }
+    .roadmap-desc { color: var(--text-muted); font-size: 0.95rem; }
+
+    /* Loop visual */
+    .loop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      background: var(--surface);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+    }
+    .loop span { padding: 0.5rem 0.75rem; background: var(--surface2); border-radius: var(--radius-sm); font-size: 0.9rem; color: var(--text); }
+    .loop .arrow { color: var(--accent); font-size: 1rem; }
+
+    /* Footer */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>AI Ecommerce Platform</h1>
+      <p class="tagline">Empower your brand to advertise, localize, and sell in the U.S. market—with one end-to-end, data-driven system.</p>
+      <p class="value">Affordable. Compliant. Built for manufacturers and brand owners targeting the U.S.</p>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <!-- Who it's for -->
+      <section class="section">
+        <h2 class="section-title">Who it’s for</h2>
+        <p>Small to medium manufacturers and brand owners in China whose main sales market is the United States.</p>
+        <div class="card">
+          <p style="margin:0; color: var(--text-muted);">You get a single platform that replaces the need for expensive U.S. agencies and fills the gap when local teams lack U.S. advertising expertise and familiarity with the U.S. technical and advertising ecosystem.</p>
+        </div>
+      </section>
+
+      <!-- Problem → Solution -->
+      <section class="section">
+        <h2 class="section-title">How we close the loop</h2>
+        <p>Ineffective marketing leads to missed feedback and sales—and hurts growth. Our tool closes the loop:</p>
+        <div class="loop">
+          <span>Better ads & listings</span>
+          <span class="arrow">→</span>
+          <span>More feedback</span>
+          <span class="arrow">→</span>
+          <span>Better product refinement & strategy</span>
+        </div>
+        <p><strong style="color: var(--text);">Value proposition:</strong> End-to-end, affordable, data-driven solution that reduces reliance on expensive U.S. agencies while keeping compliance and quality in check.</p>
+      </section>
+
+      <!-- Architecture -->
+      <section class="section">
+        <h2 class="section-title">How it works</h2>
+        <p>An orchestration layer ties everything together. It holds your brand, product, and campaign context and calls the right agents in sequence—each receiving a clear, minimal context so your data stays consistent.</p>
+        <div class="arch">
+          <div class="arch-inner">
+            <div class="arch-box context">Product & brand context<br><small style="font-weight:400;opacity:.9">Guidelines, catalog, campaigns</small></div>
+            <span class="arch-arrow">→</span>
+            <div class="arch-box orchestration">Orchestration layer<br><small style="font-weight:400;opacity:.9">Workflow runner</small></div>
+            <span class="arch-arrow">→</span>
+            <div class="arch-box agents">Agents<br><small style="font-weight:400;opacity:.9">10 specialized agents</small></div>
+            <span class="arch-arrow">→</span>
+            <div class="arch-box context">Back to context</div>
+          </div>
+          <p class="arch-caption">All agents read from and write back to a single product/brand context. Auth, billing, and content safety are built in from day one.</p>
+        </div>
+      </section>
+
+      <!-- Core agents -->
+      <section class="section">
+        <h2 class="section-title">Core agents — what the system does for you</h2>
+        <p style="margin-bottom: 1.5rem;">Six agents that handle industry knowledge, creatives, distribution, engagement, analytics, and store listings.</p>
+        <div class="agent-grid">
+          <div class="agent-card core">
+            <h4>Industry knowledge</h4>
+            <ul>
+              <li>Best-practice library by industry (e.g. home goods, apparel, beauty)</li>
+              <li>U.S. compliance (FTC, platform policies, do/don’t by vertical)</li>
+              <li>Stable output for other agents; optional real-time trends & recommendations</li>
+              <li>Daily newsletter: platform rules, regulations, trends, competitor updates</li>
+              <li>Quick research for new customers: web search & knowledge base creation</li>
+              <li>Customer-specific knowledge storage for personalized recommendations</li>
+            </ul>
+          </div>
+          <div class="agent-card core">
+            <h4>Image-to-video</h4>
+            <ul>
+              <li>Commercial and UGC-style videos from your assets</li>
+              <li>Industry knowledge integration: daily updates from Industry Knowledge Agent</li>
+              <li>Video prompt template library: product showcase, influencer style, commercials</li>
+              <li>Prompt engineering updates for each video LLM (Runway, Pika, etc.)</li>
+              <li>Input sources: industry knowledge, video requirements, product photos</li>
+              <li>Brand guidelines (logo, colors, style); pre-publish checks</li>
+              <li>Emotion tuning; learns from performance; generation caps per campaign</li>
+            </ul>
+          </div>
+          <div class="agent-card core">
+            <h4>Media management</h4>
+            <ul>
+              <li>Create and manage scheduling of creatives generation</li>
+              <li>Automated upload to social platforms with pre-determined schedules</li>
+              <li>Schedule and publish creatives to Meta, TikTok, then more</li>
+              <li>Per-platform sizing; content calendar; failed-job handling</li>
+              <li>A/B testing and optimization from engagement data</li>
+            </ul>
+          </div>
+          <div class="agent-card core">
+            <h4>Customer engagement</h4>
+            <ul>
+              <li>Social media response: reply to comments and messages</li>
+              <li>Lead consolidation: consolidate sales leads back to brand owner</li>
+              <li>Draft replies for approval; tone and escalation rules</li>
+              <li>FAQ generator; sentiment and urgency detection</li>
+            </ul>
+          </div>
+          <div class="agent-card core">
+            <h4>Analytics</h4>
+            <ul>
+              <li>Live dashboard: generate and update live dashboard for stakeholders</li>
+              <li>Key metrics tracking: ad spending, top performing videos</li>
+              <li>Alert system: GMV drops, conversion rate changes, inventory, CTR alerts</li>
+              <li>Insights, product recommendations, and feedback dashboards</li>
+              <li>Data from platforms and stores; scheduled refresh and alerts</li>
+              <li>Predictive analytics and A/B test suggestions</li>
+            </ul>
+          </div>
+          <div class="agent-card core">
+            <h4>Store / listing management</h4>
+            <ul>
+              <li>One catalog → Amazon, Shopify, and more</li>
+              <li>Compliance and SEO; price/stock sync; first listing approval</li>
+              <li>Market-specific and competitor insights</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Extended agents -->
+      <section class="section">
+        <h2 class="section-title">Extended agents</h2>
+        <p style="margin-bottom: 1rem;">Additional capabilities as you scale: market research, branding strategy, localization, and legal compliance.</p>
+        <div class="agent-grid">
+          <div class="agent-card extended">
+            <h4>Market research</h4>
+            <ul>
+              <li>U.S. niche research; social listening and trends</li>
+              <li>High-potential target markets per brand</li>
+            </ul>
+          </div>
+          <div class="agent-card extended">
+            <h4>Branding strategy</h4>
+            <ul>
+              <li>Create branding and strategy plan for brand/product</li>
+              <li>Input processing: brand info, industry knowledge, competitors</li>
+              <li>Social media plan based on goals (long-term positioning or short-term)</li>
+              <li>Long-term strategy from performance and feedback</li>
+              <li>Positioning, value proposition, messaging</li>
+              <li>Goal-based planning: support long-term and short-term goals</li>
+            </ul>
+          </div>
+          <div class="agent-card extended">
+            <h4>Localization</h4>
+            <ul>
+              <li>U.S. vernacular, cultural nuances, packaging</li>
+              <li>Learns from customer interactions over time</li>
+            </ul>
+          </div>
+          <div class="agent-card extended">
+            <h4>Legal compliance</h4>
+            <ul>
+              <li>U.S. ad regulations (e.g. FTC)</li>
+              <li>Single compliance check before publish</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Customer User Journey -->
+      <section class="section">
+        <h2 class="section-title">Business customer user journey</h2>
+        <p style="margin-bottom: 1.5rem;">Step-by-step process for onboarding new business customers and how each agent contributes to their success.</p>
+        
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;"><span class="num">1</span> Collect product information</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Industry Knowledge Agent</strong> stores customer requirements, performs web search, parses website information, and creates initial industry knowledge base.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;"><span class="num">2</span> Define goals</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Branding & Strategy Agent</strong> inputs brand information, searches industry knowledge and competitors, and creates a social media plan based on goals.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;"><span class="num">3</span> Create initial videos</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Image-to-Video Agent</strong> collects information from Industry Knowledge Agent daily and creates videos from product photos.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;"><span class="num">4</span> Schedule and upload</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Media Management Agent</strong> executes scheduled uploads based on the plan from Branding & Strategy Agent.</p>
+        </div>
+
+        <div class="card" style="margin-bottom: 1rem;">
+          <h3 style="margin-top: 0;"><span class="num">5</span> Show centralized data</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);"><strong style="color: var(--accent);">Analytics Agent</strong> generates live dashboard, provides insights and recommendations, and alerts on key metrics changes.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top: 0;">Continuous engagement</h3>
+          <p style="margin: 0.5rem 0; color: var(--text-muted);">After initial setup, agents work continuously:</p>
+          <ul style="margin-top: 0.5rem;">
+            <li><strong style="color: var(--accent);">Industry Knowledge Agent:</strong> Daily updates and newsletter distribution</li>
+            <li><strong style="color: var(--accent);">Customer Engagement Agent:</strong> Real-time response to comments and messages, lead consolidation</li>
+            <li><strong style="color: var(--accent);">Analytics Agent:</strong> Continuous monitoring and alerting</li>
+            <li><strong style="color: var(--accent);">Image-to-Video Agent:</strong> Regular video generation based on performance and trends</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Why choose us -->
+      <section class="section">
+        <h2 class="section-title">Why this system</h2>
+        <div class="pillars">
+          <div class="pillar"><strong>Speed & cost</strong><span>Faster and more affordable than U.S.-based agencies.</span></div>
+          <div class="pillar"><strong>Breadth</strong><span>Full stack from ads to engagement, analytics, and listings—plus research, branding, and compliance as you grow.</span></div>
+          <div class="pillar"><strong>Data-driven</strong><span>Not just automation—continuous optimization from real data and feedback.</span></div>
+        </div>
+      </section>
+
+      <!-- Roadmap -->
+      <section class="section">
+        <h2 class="section-title">Roadmap</h2>
+        <div class="roadmap">
+          <div class="roadmap-item">
+            <span class="roadmap-phase">Phase 1 (MVP)</span>
+            <span class="roadmap-desc">Orchestration and context; 1–2 industries; core agents for 1–2 platforms; one catalog and store; analytics and engagement (draft replies); auth and usage tracking.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-phase">Phase 2</span>
+            <span class="roadmap-desc">More platforms and industries; A/B testing and predictive analytics; optional market research and localization; full auto-publish where safe.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-phase">Phase 3</span>
+            <span class="roadmap-desc">Branding strategy, legal compliance module, competitor monitoring, more marketplaces, real-time dashboard where needed.</span>
+          </div>
+          <div class="roadmap-item">
+            <span class="roadmap-phase">Ongoing</span>
+            <span class="roadmap-desc">U.S. beta testing, user feedback, scalability and cost control (e.g. video caps).</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- User experience -->
+      <section class="section">
+        <h2 class="section-title">User experience</h2>
+        <div class="table-wrap">
+          <table>
+            <tr><th>UI/UX</th><td>Simple dashboards and actionable tasks for non-technical users.</td></tr>
+            <tr><th>Onboarding</th><td>Guided tour so you can start quickly.</td></tr>
+            <tr><th>Support</th><td>AI-driven support (e.g. chatbot) to get the most from the tool.</td></tr>
+            <tr><th>Updates</th><td>Ongoing updates to models and knowledge from market and user feedback.</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <p>AI Ecommerce Platform — Plan v1.0 · Built for manufacturers and brand owners targeting the U.S. market.</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

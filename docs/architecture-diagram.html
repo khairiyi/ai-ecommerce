@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Ecommerce Platform – Architecture</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'base',
+      themeVariables: {
+        primaryColor: '#e8f4f8',
+        primaryTextColor: '#1a1a1a',
+        primaryBorderColor: '#2d7ab8',
+        lineColor: '#4a90b8',
+        secondaryColor: '#f0f7fc',
+            tertiaryColor: '#fafafa',
+        background: '#ffffff',
+        mainBkg: '#e8f4f8',
+        nodeBorder: '#2d7ab8',
+        clusterBkg: '#f5f9fc',
+        clusterBorder: '#4a90b8',
+        titleColor: '#1a1a1a',
+        edgeLabelBackground: '#fff',
+        fontFamily: 'system-ui, -apple-system, sans-serif',
+        fontSize: '16px'
+      },
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 24
+      }
+    });
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: #f8fafc;
+      color: #1a1a1a;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #64748b;
+      margin-bottom: 2rem;
+    }
+    .diagram-wrap {
+      background: #fff;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,.08);
+      margin-bottom: 2rem;
+      overflow: auto;
+    }
+    .diagram-wrap h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      color: #334155;
+    }
+    .mermaid {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .legend {
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      background: #f1f5f9;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      color: #475569;
+    }
+    .legend strong { color: #1e293b; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>AI Ecommerce Platform – Architecture</h1>
+    <p class="subtitle">Product/brand context, orchestration layer, and agents</p>
+
+    <div class="diagram-wrap">
+      <h2>High-level flow</h2>
+      <pre class="mermaid">
+flowchart TB
+  subgraph context [Product and brand context]
+    Brand[Brand guidelines]
+    Products[Product catalog]
+    Campaigns[Campaigns and channels]
+  end
+
+  subgraph orchestration [Orchestration layer]
+    Workflow[Workflow runner]
+  end
+
+  subgraph agents [Agents]
+    direction TB
+    IK[Industry knowledge]
+    I2V[Image to video]
+    MM[Media management]
+    CE[Customer engagement]
+    AN[Analytics]
+    SL[Store and listing]
+    MR[Market research]
+    BR[Branding strategy]
+    LOC[Localization]
+    LEG[Legal compliance]
+  end
+
+  context --> orchestration
+  orchestration --> agents
+  agents --> context
+      </pre>
+    </div>
+
+    <div class="diagram-wrap">
+      <h2>Agent categories (core vs extended)</h2>
+      <pre class="mermaid">
+flowchart LR
+  subgraph core [Core agents]
+    IK[Industry knowledge]
+    I2V[Image to video]
+    MM[Media management]
+    CE[Customer engagement]
+    AN[Analytics]
+    SL[Store and listing]
+  end
+
+  subgraph extended [Extended agents]
+    MR[Market research]
+    BR[Branding strategy]
+    LOC[Localization]
+    LEG[Legal compliance]
+  end
+
+  core <--> extended
+      </pre>
+    </div>
+
+    <div class="diagram-wrap">
+      <h2>Business customer user journey</h2>
+      <pre class="mermaid">
+flowchart TD
+    Start([New Customer]) --> Step1[1. Collect Product Information]
+    Step1 --> IK[Industry Knowledge Agent]
+    IK --> Step2[2. Define Goals]
+    Step2 --> BR[Branding & Strategy Agent]
+    BR --> Step3[3. Create Initial Videos]
+    Step3 --> I2V[Image-to-Video Agent]
+    I2V --> Step4[4. Schedule and Upload]
+    Step4 --> MM[Media Management Agent]
+    MM --> Step5[5. Show Centralized Data]
+    Step5 --> AN[Analytics Agent]
+    AN --> Continuous[Continuous Engagement]
+    Continuous --> IK
+    Continuous --> CE[Customer Engagement Agent]
+    Continuous --> AN
+    Continuous --> I2V
+      </pre>
+    </div>
+
+    <div class="legend">
+      <strong>Flow:</strong> The orchestration layer holds brand id, product id, campaign id, and target channel. It calls agents in sequence (e.g. industry knowledge → image-to-video → media management) and passes a minimal context object. All agents read from and write back to the product/brand context.
+      <br><br>
+      <strong>User Journey:</strong> New customers go through 5 steps: (1) Collect product information via Industry Knowledge Agent, (2) Define goals with Branding & Strategy Agent, (3) Create videos with Image-to-Video Agent, (4) Schedule uploads with Media Management Agent, and (5) View analytics. After setup, agents work continuously for ongoing engagement.
+    </div>
+  </div>
+</body>
+</html>
