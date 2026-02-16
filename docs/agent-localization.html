@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Localization Agent — AI Ecommerce Platform</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface2: #243044;
+      --text: #e6edf3;
+      --text-muted: #8b9cb3;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --success: #22c55e;
+      --border: #2d3a4d;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+    .page { padding: 3rem 0 4rem; }
+
+    /* Navigation */
+    .nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(26, 35, 50, 0.9);
+    }
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      min-height: 48px;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      padding: 0.25rem 0;
+    }
+    .nav-links a:hover {
+      color: var(--success);
+    }
+    .nav-links .active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-dropdown-toggle {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      white-space: nowrap;
+      padding: 0.25rem 0;
+      line-height: 1.5;
+    }
+    .nav-dropdown-toggle:hover {
+      color: var(--accent);
+    }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem;
+      min-width: 200px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+    /* Create hover bridge to prevent gap */
+    .nav-dropdown::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+      background: transparent;
+    }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 4px;
+    }
+    .nav-dropdown-menu a:hover {
+      background: var(--surface2);
+      color: var(--accent);
+    }
+
+    /* Hero */
+    .hero {
+      text-align: center;
+      padding: 3rem 0 4rem;
+      background: linear-gradient(180deg, var(--surface) 0%, var(--bg) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero h1 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+      color: var(--text);
+    }
+    .hero .tagline {
+      font-size: 1.15rem;
+      color: var(--text-muted);
+      max-width: 560px;
+      margin: 0 auto;
+    }
+    .hero .badge {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      background: rgba(34, 197, 94, 0.15);
+      color: var(--accent);
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+
+    /* Section */
+    .section { margin-bottom: 3.5rem; }
+    .section-title {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      color: var(--text);
+    }
+    .section p { color: var(--text-muted); margin-bottom: 1rem; }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .card ul { list-style: none; padding-left: 0; margin: 0; }
+    .card li {
+      padding: 0.4rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .card li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.75em;
+      width: 5px;
+      height: 5px;
+      background: var(--accent);
+      border-radius: 50%;
+      opacity: 0.7;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="presentation.html" class="nav-logo">AI Ecommerce Platform</a>
+      <div class="nav-links">
+        <a href="presentation.html">Overview</a>
+        <a href="architecture-diagram.html">Architecture</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Extended Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-industry-knowledge.html">Industry Knowledge</a>
+            <a href="agent-image-to-video.html">Image-to-Video</a>
+            <a href="agent-media-management.html">Media Management</a>
+            <a href="agent-customer-engagement.html">Customer Engagement</a>
+            <a href="agent-analytics.html">Analytics</a>
+            <a href="agent-store-listing.html">Store/Listing Management</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Extended Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-market-research.html">Market Research</a>
+            <a href="agent-branding-strategy.html">Branding Strategy</a>
+            <a href="agent-localization.html" class="active">Localization</a>
+            <a href="agent-legal-compliance.html">Legal Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Localization Agent</h1>
+      <p class="tagline">Adapt your products for U.S. audiences with culturally-aware language, messaging, and packaging optimization.</p>
+      <span class="badge">Extended Agent</span>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+            <section class="section">
+        <h2 class="section-title">Overview</h2>
+        <p>The Localization Agent ensures products resonate with U.S. audiences by adapting language, cultural references, and packaging. It learns from customer interactions to continuously refine localization strategies.</p>
+      </section>
+
+            <section class="section">
+        <h2 class="section-title">Key Features</h2>
+        
+        <div class="card">
+          <h3>Localization Features</h3>
+          <ul>
+            <li>Localize products: language (U.S. vernacular), cultural nuances, packaging design</li>
+            <li>Learn from ongoing customer interactions and refine over time</li>
+            <li>Work with store/listing market-specific recommendations and industry knowledge compliance</li>
+          </ul>
+        </div>
+
+      </section>
+
+            <section class="section">
+        <h2 class="section-title">How It Works</h2>
+        <p>The Localization Agent analyzes product content, descriptions, and packaging to identify areas requiring adaptation for U.S. markets. It applies cultural insights, language preferences, and market-specific knowledge to create localized versions. Customer feedback and interaction data inform continuous improvements to localization strategies.</p>
+      </section>
+
+      <footer class="footer">
+        <p><a href="presentation.html" style="color: var(--accent); text-decoration: none;">← Back to Overview</a> | AI Ecommerce Platform</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

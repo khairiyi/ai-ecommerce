@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Ecommerce Platform – Architecture</title>
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      themeVariables: {
+        primaryColor: '#1a2332',
+        primaryTextColor: '#e6edf3',
+        primaryBorderColor: '#3b82f6',
+        lineColor: '#4a90b8',
+        secondaryColor: '#243044',
+        tertiaryColor: '#1a2332',
+        background: '#0f1419',
+        mainBkg: '#1a2332',
+        nodeBorder: '#3b82f6',
+        clusterBkg: '#243044',
+        clusterBorder: '#3b82f6',
+        titleColor: '#e6edf3',
+        edgeLabelBackground: '#1a2332',
+        fontFamily: 'Plus Jakarta Sans, system-ui, -apple-system, sans-serif',
+        fontSize: '16px'
+      },
+      flowchart: {
+        useMaxWidth: true,
+        htmlLabels: true,
+        curve: 'basis',
+        padding: 24
+      }
+    });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f1419;
+      --surface: #1a2332;
+      --surface2: #243044;
+      --text: #e6edf3;
+      --text-muted: #8b9cb3;
+      --accent: #3b82f6;
+      --accent-soft: rgba(59, 130, 246, 0.15);
+      --success: #22c55e;
+      --border: #2d3a4d;
+      --radius: 12px;
+      --radius-sm: 8px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 24px;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text);
+    }
+    .subtitle {
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+    .diagram-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      overflow: auto;
+    }
+    .diagram-wrap h2 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 1rem 0;
+      color: var(--text);
+    }
+    .mermaid {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+    }
+    .legend {
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+    .legend strong { color: var(--text); }
+    /* Navigation */
+    .nav {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(26, 35, 50, 0.9);
+    }
+    .nav-container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      min-height: 48px;
+    }
+    .nav-logo {
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--text);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+      padding: 0.25rem 0;
+    }
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+    .nav-links .active {
+      color: var(--accent);
+      font-weight: 600;
+    }
+    .nav-dropdown {
+      position: relative;
+      display: flex;
+      align-items: center;
+      line-height: 1.5;
+    }
+    .nav-dropdown-toggle {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      white-space: nowrap;
+      padding: 0.25rem 0;
+      line-height: 1.5;
+    }
+    .nav-dropdown-toggle:hover {
+      color: var(--accent);
+    }
+    .nav-dropdown-menu {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      right: 0;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 0.5rem;
+      min-width: 200px;
+      display: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .nav-dropdown:hover .nav-dropdown-menu {
+      display: block;
+    }
+    /* Create hover bridge to prevent gap */
+    .nav-dropdown::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      height: 0.5rem;
+      background: transparent;
+    }
+    .nav-dropdown-menu a {
+      display: block;
+      padding: 0.5rem 0.75rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      border-radius: 4px;
+    }
+    .nav-dropdown-menu a:hover {
+      background: var(--surface2);
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="presentation.html" class="nav-logo">AI Ecommerce Platform</a>
+      <div class="nav-links">
+        <a href="presentation.html">Overview</a>
+        <a href="architecture-diagram.html" class="active">Architecture</a>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Core Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-industry-knowledge.html">Industry Knowledge</a>
+            <a href="agent-image-to-video.html">Image-to-Video</a>
+            <a href="agent-media-management.html">Media Management</a>
+            <a href="agent-customer-engagement.html">Customer Engagement</a>
+            <a href="agent-analytics.html">Analytics</a>
+            <a href="agent-store-listing.html">Store/Listing Management</a>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <span class="nav-dropdown-toggle">Extended Agents ▼</span>
+          <div class="nav-dropdown-menu">
+            <a href="agent-market-research.html">Market Research</a>
+            <a href="agent-branding-strategy.html">Branding Strategy</a>
+            <a href="agent-localization.html">Localization</a>
+            <a href="agent-legal-compliance.html">Legal Compliance</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1>How It Works</h1>
+    <p class="subtitle">A unified system of intelligent agents that automate your entire U.S. market entry workflow</p>
+
+    <div class="diagram-wrap">
+      <h2>High-level flow</h2>
+      <pre class="mermaid">
+flowchart TB
+  subgraph context [Product and brand context]
+    Brand[Brand guidelines]
+    Products[Product catalog]
+    Campaigns[Campaigns and channels]
+  end
+
+  subgraph orchestration [Orchestration layer]
+    Workflow[Workflow runner]
+  end
+
+  subgraph agents [Agents]
+    direction TB
+    IK[Industry knowledge]
+    I2V[Image to video]
+    MM[Media management]
+    CE[Customer engagement]
+    AN[Analytics]
+    SL[Store and listing]
+    MR[Market research]
+    BR[Branding strategy]
+    LOC[Localization]
+    LEG[Legal compliance]
+  end
+
+  context --> orchestration
+  orchestration --> agents
+  agents --> context
+      </pre>
+    </div>
+
+    <div class="diagram-wrap">
+      <h2>Agent categories (core vs extended)</h2>
+      <pre class="mermaid">
+flowchart LR
+  subgraph core [Core agents]
+    IK[Industry knowledge]
+    I2V[Image to video]
+    MM[Media management]
+    CE[Customer engagement]
+    AN[Analytics]
+    SL[Store and listing]
+  end
+
+  subgraph extended [Extended agents]
+    MR[Market research]
+    BR[Branding strategy]
+    LOC[Localization]
+    LEG[Legal compliance]
+  end
+
+  core <--> extended
+      </pre>
+    </div>
+
+    <div class="diagram-wrap">
+      <h2>Business customer user journey</h2>
+      <pre class="mermaid">
+flowchart TD
+    Start([New Customer]) --> Step1[1. Collect Product Information]
+    Step1 --> IK[Industry Knowledge Agent]
+    IK --> Step2[2. Define Goals]
+    Step2 --> BR[Branding & Strategy Agent]
+    BR --> Step3[3. Create Initial Videos]
+    Step3 --> I2V[Image-to-Video Agent]
+    I2V --> Step4[4. Schedule and Upload]
+    Step4 --> MM[Media Management Agent]
+    MM --> Step5[5. Show Centralized Data]
+    Step5 --> AN[Analytics Agent]
+    AN --> Continuous[Continuous Engagement]
+    Continuous --> IK
+    Continuous --> CE[Customer Engagement Agent]
+    Continuous --> AN
+    Continuous --> I2V
+      </pre>
+    </div>
+
+    <div class="legend">
+      <strong>Flow:</strong> The orchestration layer holds brand id, product id, campaign id, and target channel. It calls agents in sequence (e.g. industry knowledge → image-to-video → media management) and passes a minimal context object. All agents read from and write back to the product/brand context.
+      <br><br>
+      <strong>User Journey:</strong> New customers go through 5 steps: (1) Collect product information via Industry Knowledge Agent, (2) Define goals with Branding & Strategy Agent, (3) Create videos with Image-to-Video Agent, (4) Schedule uploads with Media Management Agent, and (5) View analytics. After setup, agents work continuously for ongoing engagement.
+    </div>
+  </div>
+</body>
+</html>
