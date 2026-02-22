@@ -1,9 +1,5 @@
 # Industry Knowledge Agent - Requirements
 
-I want to build it in n8n. what's the best initial version I can build it so that I can start use this agent and start approach business owners? 
-
-here for the beginning in the cusotmer input, I want it to be very simple: customer only need to have a conversation with me(in chinese), and then I can compile morei information like competitor names, urls, and etc., and then send them to this agent. The agent will then process the information
-
 ## Overview
 Auto-fetch and research best practices; build and maintain a library by industry.
 
